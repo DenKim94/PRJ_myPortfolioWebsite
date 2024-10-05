@@ -4,7 +4,7 @@ import PortfolioSection from './components/PortfolioSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import './App.css'
+import './styles/App.css'
 
 function App() {
   return (

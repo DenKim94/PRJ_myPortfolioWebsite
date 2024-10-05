@@ -1,12 +1,12 @@
 :root {
+  --padding-relValue: 30%;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 400;
+  font-size: 18px;
 
-  color-scheme: light dark;
-  color: #000000;
-  background-color: #ffffff;
-
+  color: #ffffff;
+  background: linear-gradient(to right, #6157FF, #EE49FD);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,11 +17,11 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  width: 100%; 
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.1em;
   line-height: 1.1;
 }
