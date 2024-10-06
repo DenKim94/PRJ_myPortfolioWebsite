@@ -1,9 +1,11 @@
+import './../styles/Header.css'
+
 function Header() {
   return (
-    <header className="header">
-      <div className="myLogo">DK</div>
+    <header className="fixed-header">
+      <div className="my-logo">DK</div>
       <nav className="navigation-bar">
-        <ul>
+        <ul className="navigation-elements"> 
           <li>
             <a href="#start">Start</a>
           </li>

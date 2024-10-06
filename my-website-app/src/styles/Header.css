@@ -1,0 +1,59 @@
+@import url('index.css');
+
+.fixed-header{
+    background-color: black;
+    position: fixed;
+    height: var(--padding-topAbsValue);
+    width: 100%;
+    top: 0;
+    left: 0;    
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+}
+
+.my-logo{
+    color: white;
+    font-size: 30px;
+    margin-left: var(--marginLeft-Logo); 
+    font-weight: bold;
+    transition: filter 300ms ease; 
+}
+
+.my-logo:hover{
+    cursor: default;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
+}
+
+nav {
+    margin-right: var(--marginRight-Nav);
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.navigation-elements{
+    list-style: none; /* Entfernt die Standard-Punkte */
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation-elements li{
+    padding-right: 40px;
+}
+
+.navigation-elements a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500; 
+    transition: filter 300ms ease; 
+}
+
+.navigation-elements a:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
+}

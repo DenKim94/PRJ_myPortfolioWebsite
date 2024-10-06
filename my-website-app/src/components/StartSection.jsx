@@ -1,3 +1,5 @@
+import './../styles/Sections.css'
+
 function StartSection() {
     return ( 
         <section id='start'className='start-section'>
