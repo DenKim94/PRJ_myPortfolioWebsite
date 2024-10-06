@@ -16,7 +16,7 @@ function Header() {
             <a href="#about">Über mich</a>
           </li>
           <li>
-            <a href="#contact">Kontakt</a>
+            <a id="contact_hover" href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>

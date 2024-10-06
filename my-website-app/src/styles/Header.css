@@ -43,7 +43,7 @@ nav {
 }
 
 .navigation-elements li{
-    padding-right: 40px;
+    text-align: center;
 }
 
 .navigation-elements a {
@@ -51,9 +51,22 @@ nav {
     text-decoration: none;
     font-weight: 500; 
     transition: filter 300ms ease; 
+    margin-right: 40px;
+    padding: 6px
 }
 
 .navigation-elements a:hover{
     cursor: pointer;
+    font-weight: 580;
+}
+
+#contact_hover{
+    border: 1px solid #ffffff; 
+    border-radius: 5px;
+    background-color: #ab57ff;
+}
+
+#contact_hover:hover{
+    border: 2px solid #ffffff; 
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
 }
