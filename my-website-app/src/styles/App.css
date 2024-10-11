@@ -2,7 +2,7 @@
 
 #root {
   width: 100%;
-  min-width: 480px;
+  min-width: var(--minAppWidth);
   margin: 0 auto;
   text-align: center;
   height: 100vh;
@@ -15,7 +15,7 @@
 .main-content {
   padding-top: var(--padding-topAbsValue);
   width: calc(100% - var(--padding-relValue));
-  min-width: 480px;
+  min-width: var(--minAppWidth);
   max-width: min(calc(100% - var(--padding-relValue)), var(--maxWidth));
   margin: 0 auto;
   display: flex;
