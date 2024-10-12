@@ -1,14 +1,45 @@
+import {useState, useEffect} from 'react'
 import './../styles/Header.css'
+import * as globalConstants from './../globalConstants.js'
 
 function Header() {
-
   const showSidebar = () => {
     const sidebar = document.querySelector('.sidebar-elements')
-    sidebar.style.display = 'flex'
+    if(sidebar){
+      sidebar.style.display = 'flex';
+    }
   }
   const hideSidebar = () => {
     const sidebar = document.querySelector('.sidebar-elements')
-    sidebar.style.display = 'none'
+    if(sidebar){
+      sidebar.style.display = 'none';
+    }
+  }
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
+
+    // Event-Listener für die Fenstergröße hinzufügen
+    window.addEventListener('resize', handleWindowResize);
+
+    // Cleanup-Funktion, um den Event-Listener zu entfernen
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, [windowSize]);
+
+  if(windowSize.width >= globalConstants.THRESHOLD_MAX_APP_WIDTH) {
+    hideSidebar()
   }
 
   return (

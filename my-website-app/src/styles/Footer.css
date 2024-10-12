@@ -20,5 +20,5 @@ footer {
 }
 
 #copyright {
-    margin-right: var(--marginRight-Nav);
+    margin-right: var( --marginRight-Footer);
 }

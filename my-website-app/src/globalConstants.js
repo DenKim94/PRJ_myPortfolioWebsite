@@ -1,0 +1,2 @@
+export const THRESHOLD_MAX_APP_WIDTH = 800;
+export const THRESHOLD_MIN_APP_WIDTH = 768;
