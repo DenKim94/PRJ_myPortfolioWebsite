@@ -65,7 +65,7 @@ nav {
 .sidebar-elements{
     position: fixed;
     list-style: none;
-    display: none;   
+    display: flex;   
     flex-direction: column;    
     align-items: flex-start;
     justify-content: flex-start;
@@ -77,8 +77,14 @@ nav {
     top: 0px;
     right: 0px;
     margin-top: 0px;
-    padding-left: 0px
+    padding-left: 0px;
+    transform: translateX(100%); 
+    transition: 0.35s ease-in-out;
 }
+
+.sidebar-elements.open {
+    transform: translateX(0);
+  }
 
 .sidebar-elements li{
     text-align: center;
@@ -91,7 +97,8 @@ nav {
     text-decoration: none;
     font-weight: 500; 
     padding: 6px;
-    transition: filter 300ms ease; 
+    width: 100%;
+    transition: filter 300ms ease;
 }
 
 .sidebar-elements a:hover{
