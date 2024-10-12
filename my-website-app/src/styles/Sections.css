@@ -7,3 +7,30 @@
 .contact-section{
     height: calc(100vh - calc(var(--padding-topAbsValue)*2));
 }
+
+.start-content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.info-text-container{
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid 1px white; */
+}
+
+.greeting-text {
+    font-size: 2rem;
+}
+
+.image-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    /* border: solid 1px white; */
+}

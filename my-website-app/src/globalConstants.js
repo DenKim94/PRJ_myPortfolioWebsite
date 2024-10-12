@@ -1,2 +1,7 @@
 export const THRESHOLD_MAX_APP_WIDTH = 800;
 export const SCROLL_VIEW_OFFSET = 0;
+export const TYPE_ANIMATION_DURATION_1 = 95;
+export const TYPE_ANIMATION_DURATION_2 = 90;
+export const HOLD_ANIMATION_DURATION_1 = 3000;
+export const HOLD_ANIMATION_DURATION_2 = 3300;
+

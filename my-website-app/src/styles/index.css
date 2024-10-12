@@ -1,9 +1,9 @@
 :root {
   --minAppWidth: 420px;
-  --padding-relValue: 30%;
+  --padding-relValue: 25%;
   --padding-topAbsValue: 60px;
   --sidebarWidth: 250px;
-  --maxWidthSections: 1280px;
+  --maxWidthSections: 1600px;
   --marginLeft-Logo: 35px;
   --marginRight-Nav: 0px;
   --marginRight-Footer: 35px;
