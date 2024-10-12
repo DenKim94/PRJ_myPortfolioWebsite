@@ -16,14 +16,13 @@ function Header() {
     }
   }
 
-  const scrollToFullView = (event) => {
+  const scrollToSection = (event) => {
     try{
       const sectionId = event.target.getAttribute('href').replace('#', '');
       const section = document.getElementById(sectionId);
       const headerHeight = document.querySelector('.fixed-header').clientHeight;
-    
-      section.scrollIntoView({ block: 'start' });
-      window.scrollTo({ top: section.offsetTop - headerHeight - 20, behavior: 'smooth' });
+      section?.scrollIntoView({ block: 'start' });
+      window.scrollTo({ top: section.offsetTop - headerHeight - globalConstants.SCROLL_VIEW_OFFSET, behavior: 'smooth' });
     }
     catch(error){
       console.error(error.message)
@@ -65,30 +64,30 @@ function Header() {
             <a id="close_icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M256-192.35 192.35-256l224-224-224-224L256-767.65l224 224 224-224L767.65-704l-224 224 224 224L704-192.35l-224-224-224 224Z"/></svg></a>
           </li>
           <li>
-            <a href="#start" onClick={scrollToFullView}>Start</a>
+            <a href="#start" onClick={scrollToSection}>Start</a>
           </li>
           <li>
-            <a href="#portfolio" onClick={scrollToFullView}>Meine Projekte</a>
+            <a href="#portfolio" onClick={scrollToSection}>Meine Projekte</a>
           </li>
           <li>
-            <a href="#about" onClick={scrollToFullView}>Über mich</a>
+            <a href="#about" onClick={scrollToSection}>Über mich</a>
           </li>
           <li>
-            <a id="contact_hover" href="#contact" onClick={scrollToFullView}>Kontakt</a>
+            <a id="contact_hover" href="#contact" onClick={scrollToSection}>Kontakt</a>
           </li>
         </ul>
         <ul className="navigation-elements"> 
           <li className='hideOnMobile'>
-            <a href="#start" onClick={scrollToFullView}>Start</a>
+            <a href="#start" onClick={scrollToSection}>Start</a>
           </li>
           <li className='hideOnMobile'>
-            <a href="#portfolio" onClick={scrollToFullView}>Meine Projekte</a>
+            <a href="#portfolio" onClick={scrollToSection}>Meine Projekte</a>
           </li>
           <li className='hideOnMobile'>
-            <a href="#about" onClick={scrollToFullView}>Über mich</a>
+            <a href="#about" onClick={scrollToSection}>Über mich</a>
           </li>
           <li className='hideOnMobile'>
-            <a id="contact_hover" href="#contact" onClick={scrollToFullView}>Kontakt</a>
+            <a id="contact_hover" href="#contact" onClick={scrollToSection}>Kontakt</a>
           </li>
           <li onClick={showSidebar}>
             <a className='showOnMobile'><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M111.87-228.28v-91h736.26v91H111.87Zm0-206.22v-91h736.26v91H111.87Zm0-206.22v-91h736.26v91H111.87Z"/></svg></a>
