@@ -1,12 +1,15 @@
 :root {
   --minAppWidth: 420px;
-  --padding-relValue: 25%;
+  --padding-relValue: 20%;
   --padding-topAbsValue: 60px;
   --sidebarWidth: 250px;
   --maxWidthSections: 1600px;
   --marginLeft-Logo: 35px;
   --marginRight-Nav: 0px;
   --marginRight-Footer: 35px;
+  --animationDelay: 0.8s;
+  --photoFrameSize: 360px;
+  --offsetImageContainer: 30px;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;

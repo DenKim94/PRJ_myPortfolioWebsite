@@ -1,19 +1,18 @@
-import './../styles/Sections.css'
-import './InfoTextContainer.jsx'
+import './../styles/SectionsGeneric.css'
+import './../styles/StartSection.css'
 import InfoTextContainer from './InfoTextContainer.jsx';
+import PhotoSlider from './PhotoSlider.jsx';
+import * as globalConstants from './../globalConstants.js'
 
 function StartSection() {
     return ( 
         <section id='start'className='start-section'>
-            <h1>Start</h1>
             <div className='start-content-container'>
                 <InfoTextContainer />
-                <div className='image-container'>
-                    <p>Some photos here.</p>
-                </div>
+                <PhotoSlider fullPhotoPath = {globalConstants.fullPhotoPath} />
             </div>
         </section>
-        );
+    );
 }
 
 export default StartSection;

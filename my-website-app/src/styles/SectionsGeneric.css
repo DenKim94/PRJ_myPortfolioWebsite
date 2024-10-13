@@ -1,0 +1,10 @@
+@import url('index.css');
+
+.start-section, .about-section, .portfolio-section {
+    height: calc(100vh - var(--padding-topAbsValue, 60px));
+}
+
+.contact-section{
+    height: calc(100vh - calc(var(--padding-topAbsValue, 60px)*2));
+}
+

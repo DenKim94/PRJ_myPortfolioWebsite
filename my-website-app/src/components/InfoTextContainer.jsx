@@ -1,4 +1,4 @@
-import './../styles/Sections.css'
+import './../styles/SectionsGeneric.css'
 import Typical from 'react-typical'
 import * as globalConstants from './../globalConstants.js'
 
@@ -8,7 +8,7 @@ const InfoTextContainer = () => {
             <h1 className="greeting-text">
                 Hallo, ich bin{' '}
                 <Typical
-                    loop={1}
+                    loop={globalConstants.NUMBER_LOOP_ANIMATION}
                     wrapper="span"
                     steps={[
                         'D', globalConstants.TYPE_ANIMATION_DURATION_1,
@@ -54,10 +54,8 @@ const InfoTextContainer = () => {
                     ]}
                 />
             </h1>
-
-            {/* Beschreibungstext mit Gleit-Animation */}
             <p className="description-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+                {globalConstants.INFO_TEXT_START_SECTION}
             </p>       
         </div>
     );
