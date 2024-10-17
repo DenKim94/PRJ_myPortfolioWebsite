@@ -10,7 +10,10 @@ export const HOLD_ANIMATION_DURATION_1 = 2000;
 export const HOLD_ANIMATION_DURATION_2 = 2000;
 
 // Texte in der Info-Box auf der Startseite
-export const INFO_TEXT_START_SECTION = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum."
+export const INFO_TEXT_START_SECTION = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
+Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
+Aus Interesse entwickelte sich ein Wunsch nach Veränderung. Daher bin ich seit knapp zwei Jahren als Softwareentwickler tätig. 
+Aus Wunsch wurde Leidenschaft, der ich in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`
 
 // Path to the images/photos
 const PATH_TO_IMAGES = 'src/assets/images/';
