@@ -2,6 +2,13 @@ import './../styles/SectionsGeneric.css'
 import Typical from 'react-typical'
 import * as globalConstants from './../globalConstants.js'
 
+/**
+ * Component for the text on the start page, which is initially invisible and then slides up.
+ * The greeting text is animated using the react-typical library.
+ * 
+ * @returns A JSX element containing a div with the class 'info-text-container', 
+ * which contains a h1 element with the class 'greeting-text' and a p element with the class 'description-text'.
+ */
 const InfoTextContainer = () => {
     return ( 
         <div className='info-text-container'>
