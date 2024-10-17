@@ -1,6 +1,7 @@
 @import url('index.css');
 
 .start-section, .about-section, .portfolio-section {
+    min-height: var(--minHeightSections);
     height: calc(100vh - var(--padding-topAbsValue, 60px));
 }
 

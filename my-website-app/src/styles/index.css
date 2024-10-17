@@ -9,6 +9,7 @@
   --marginRight-Footer: 35px;
   --animationDelay: 1.5s;
   --photoFrameSize: 360px;
+  --minHeightSections: 600px;
   --offsetImageContainer: 120px;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;

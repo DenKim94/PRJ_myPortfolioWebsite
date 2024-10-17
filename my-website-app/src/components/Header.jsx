@@ -2,6 +2,16 @@ import {useState, useEffect} from 'react'
 import './../styles/Header.css'
 import * as globalConstants from './../globalConstants.js'
 
+/**
+ * The Header component renders a fixed header at the top of the page with a logo
+ * and a navigation bar. The navigation bar has a sidebar that is only visible
+ * on mobile devices. The sidebar can be toggled by clicking on the hamburger
+ * menu icon. The navigation bar also has links to the different sections of
+ * the website. When the user clicks on a link, the corresponding section is
+ * scrolled into view. The Header component also has a function to handle window
+ * resizing and hide the sidebar when the window is larger than
+ * THRESHOLD_MAX_APP_WIDTH.
+ */
 function Header() {
   const showSidebar = () => {
     const sidebar = document.querySelector('.sidebar-elements')

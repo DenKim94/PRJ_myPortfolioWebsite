@@ -9,7 +9,8 @@ import './styles/App.css'
 /**
  * The main app component. This component renders all other
  * components together.
- *
+ * Version: 1.0
+ * 
  * The structure is as follows: 
  * - Header: navigation
  * - main: 
