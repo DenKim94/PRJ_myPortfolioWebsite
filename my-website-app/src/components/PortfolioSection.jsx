@@ -1,25 +1,30 @@
-import { motion, useInView } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import './../styles/SectionsGeneric.css'
 import './../styles/PortfolioSection.css'
 
 function PortfolioSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  const motionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: motionRef,
+    offset: ["0 1", "1.33 1"],
+  });
+
+  const scaledProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <motion.section
-      ref={ref}
-      initial={{ y: '100%' }}
-      animate={isInView ? { y: 0 } : { y: '100%' }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      id='portfolio'
-      className='portfolio-section'
-    >
+    <section id='portfolio' className='portfolio-section'>
       <h1>Meine Projekte</h1>
-      <p>Welcome to the Project section.</p>
-    </motion.section>
+      <motion.p
+        ref={motionRef}
+        style={{
+          scale: scaledProgress,
+          opacity: scrollYProgress
+        }}
+      >
+        Welcome to the Project section.
+      </motion.p>
+    </section>
   );
 }
 

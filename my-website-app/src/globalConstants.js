@@ -18,7 +18,7 @@ Aus Wunsch wurde Leidenschaft, der ich in meiner Freizeit nachgehe und mich mit 
 // Path to the images/photos
 const PATH_TO_IMAGES = 'src/assets/images/';
 const IMAGE_NAMES = ['IMG_2113.png', 'IMG_4041.png', 'IMG_4461.png', 'IMG_2716.png'];
-export const DURATION_IMAGE_ANIMATION = 3000;  // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
+export const DURATION_IMAGE_ANIMATION = 3200;  // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
 export const PHOTO_BORDER_COLOR = 'black';
 export const PHOTO_BORDER_WIDTH = '10px';
 
