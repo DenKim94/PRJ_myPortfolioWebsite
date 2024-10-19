@@ -21,13 +21,14 @@ function PortfolioSection() {
 
   return (
     <section id='portfolio' className='portfolio-section'>
-      <h1>Meine Projekte</h1>
+      <h1 id='portfolio-title'>Meine Projekte</h1>
       <motion.div
         ref={motionRef}
         style={{
           scale: scaledProgress,
           opacity: scaledProgress
         }}
+        id='portfolio-motion-div'
         className='portfolio-content-container'
       >
         Welcome to the Project section.
