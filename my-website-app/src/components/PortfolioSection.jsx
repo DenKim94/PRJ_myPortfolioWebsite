@@ -1,5 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import GeneralProjectDescription from './GeneralProjectDescription';
+import ProjectCardsContainer from './ProjectCardsContainer';
 import './../styles/SectionsGeneric.css'
 import './../styles/PortfolioSection.css'
 
@@ -31,7 +33,8 @@ function PortfolioSection() {
         id='portfolio-motion-div'
         className='portfolio-content-container'
       >
-        Welcome to the Project section.
+        <GeneralProjectDescription />
+        <ProjectCardsContainer />
       </motion.div>
     </section>
   );

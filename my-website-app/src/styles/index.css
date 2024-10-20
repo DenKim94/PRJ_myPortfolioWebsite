@@ -11,6 +11,11 @@
   --photoFrameSize: 360px;
   --minHeightSections: 600px;
   --offsetImageContainer: 120px;
+  --minWidthProjectCard: 250px;
+  --maxWidthProjectCard: 350px;
+  --maxHeightProjectCard: 500px;
+  --minHeightProjectCard: 450px;
+  --marginProjectCard: 20px;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;
