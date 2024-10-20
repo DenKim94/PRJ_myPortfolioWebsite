@@ -68,7 +68,7 @@ function Header() {
     <header className="fixed-header">
       <div className="my-logo">DK</div>
       <nav className="navigation-bar">
-        <ul className="sidebar-elements"> 
+        <ul data-testid="on-mobile-elements" className="sidebar-elements"> 
           <li onClick={hideSidebar}>
             <a id="close_icon">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
@@ -89,7 +89,7 @@ function Header() {
             <a id="contact_hover" href="#contact" onClick={scrollToSection}>Kontakt</a>
           </li>
         </ul>
-        <ul className="navigation-elements"> 
+        <ul data-testid = "nav-elements" className="navigation-elements"> 
           <li className='hideOnMobile'>
             <a href="#start" onClick={scrollToSection}>Start</a>
           </li>
