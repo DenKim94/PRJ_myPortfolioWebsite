@@ -32,6 +32,7 @@
     animation-delay: var(--animationDelay); 
     height: 80%; /* same height as .start-content-container */
     overflow-y: auto;
+    white-space: pre-line;
 }
 
 .image-container {

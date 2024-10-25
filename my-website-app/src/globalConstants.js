@@ -15,8 +15,9 @@ export const HOLD_ANIMATION_DURATION_2 = 2000;
 
 // Text in der Info-Box auf der Startseite
 export const INFO_TEXT_START_SECTION = `Willkommen auf meiner Webseite!
-Hier wirst du meinen bisherigen persönlichen und beruflichen Werdegang kennenlernen.
+Hier wirst du meinen bisherigen persönlichen und beruflichen Werdegang kennenlernen. 
 Zudem stelle ich dir meine Softwareprojekte vor, die ich in meiner Freizeit entwickelt habe.
+
 Bei Fragen, Feedback oder Jobangeboten freue ich mich über deine E-Mail.`;
 
 // Text für die allgemeine Beschreibung der Projektseite
