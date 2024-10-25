@@ -1,5 +1,5 @@
 // Globale Konstanten für die Webanwendung
-// Update: 20.10.2024
+// Update: 25.10.2024
 
 // Schwellenwerte für das responsive Design
 export const THRESHOLD_MAX_APP_WIDTH = 800;     
@@ -14,10 +14,10 @@ export const HOLD_ANIMATION_DURATION_1 = 2000;
 export const HOLD_ANIMATION_DURATION_2 = 2000;
 
 // Text in der Info-Box auf der Startseite
-export const INFO_TEXT_START_SECTION = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
-Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
-Aus Interesse entwickelte sich ein Wunsch nach Veränderung. Daher bin ich seit knapp zwei Jahren als Softwareentwickler tätig. 
-Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`
+export const INFO_TEXT_START_SECTION = `Willkommen auf meiner Webseite!
+Hier wirst du meinen bisherigen persönlichen und beruflichen Werdegang kennenlernen.
+Zudem stelle ich dir meine Softwareprojekte vor, die ich in meiner Freizeit entwickelt habe.
+Bei Fragen, Feedback oder Jobangeboten freue ich mich über deine E-Mail.`;
 
 // Text für die allgemeine Beschreibung der Projektseite
 export const GENERAL_PROJECT_DESCRIPTION = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
@@ -44,6 +44,10 @@ export const PROJECT_DESCRIPTION_WEBSITE= `Lorem ipsum dolor sit amet, consetetu
 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.`; 
 
+export const INFO_TEXT_ABOUT_SECTION_1 = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
+Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
+Aus Interesse entwickelte sich ein Wunsch nach Veränderung. Daher bin ich seit knapp zwei Jahren als Softwareentwickler tätig. 
+Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`;
 
 // Pfade zu den Bildern für die Diashow (Photoslider)
 const PATH_TO_IMAGES = 'src/assets/images/';
@@ -69,4 +73,17 @@ export const PROJECT_URLS = {
     eca: 'https://github.com/DenKim94/PRJ_ECA',
     website: 'https://github.com/DenKim94/PRJ_myPortfolioWebsite',
 }
- 
+
+/* Relative Schwellenwerte (0-1) für die Anpassung des Offsets beim Scrollefffekt 
+im benötigten Format von framer-motion: [start, end] */
+export const SCROLL_OFFSET_DEFAULT    = ["0 1", "1 1"];
+export const SCROLL_OFFSET_MIN        = ["0 1", "0.55 1"]; 
+export const SCROLL_OFFSET_MEDIUM     = ["0 1", "0.8 1"];
+export const SCROLL_OFFSET_MAX        = ["0 1", "1.33 1"];
+
+// Relativer Skalierungsfaktor für den Start des Scrolleffekts
+export const SCROLL_SCALING_FACTOR    = 0.6; 
+
+// Absoluter Schwellenwert (in px) für die Breite des Browserfensters
+export const SCROLL_THRESHOLD_LOW     = 1300;
+export const SCROLL_THRESHOLD_HIGH    = 1700;
