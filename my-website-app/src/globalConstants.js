@@ -13,6 +13,20 @@ export const TYPE_ANIMATION_DURATION_2 = 80;
 export const HOLD_ANIMATION_DURATION_1 = 2000;  
 export const HOLD_ANIMATION_DURATION_2 = 2000;
 
+/* Relative Schwellenwerte (0-1) für die Anpassung des Offsets beim Scrollefffekt 
+im benötigten Format von framer-motion: [start, end] */
+export const SCROLL_OFFSET_DEFAULT    = ["0 1", "1 1"];
+export const SCROLL_OFFSET_MIN        = ["0 1", "0.55 1"]; 
+export const SCROLL_OFFSET_MEDIUM     = ["0 1", "0.8 1"];
+export const SCROLL_OFFSET_MAX        = ["0 1", "1.33 1"];
+
+// Relativer Skalierungsfaktor für den Start des Scrolleffekts
+export const SCROLL_SCALING_FACTOR    = 0.6; 
+
+// Absoluter Schwellenwert (in px) für die Breite des Browserfensters
+export const SCROLL_THRESHOLD_LOW     = 1300;
+export const SCROLL_THRESHOLD_HIGH    = 1700;
+
 // Text in der Info-Box auf der Startseite
 export const INFO_TEXT_START_SECTION = `Willkommen auf meiner Webseite!
 Hier wirst du meinen bisherigen persönlichen und beruflichen Werdegang kennenlernen. 
@@ -33,17 +47,15 @@ export const PROJECT_NAME_ECA = 'Enery Costs Analyzer';
 export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
 
 // Texte für die spezifische Beschreibung der aufgelisteten Projekte
-export const PROJECT_DESCRIPTION_STRATEGO = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.`; 
+export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: Onlinespiel`, 
+    `Aufwand: ca. 400 Stunden`, `Learnings: \nReact-JS; NodeJS; Cypress`]; 
 
-export const PROJECT_DESCRIPTION_ECA = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.`; 
+export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: \nTool zur Stromkostenanalyse`, 
+    `Aufwand: ca. 55 Stunden`, `Learnings: \nPython; SQLite; CustomTkinter`];
 
-export const PROJECT_DESCRIPTION_WEBSITE= `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.`; 
+export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Webseite`, 
+    `Aufwand: ca. XXX Stunden`, 
+    `Learnings: \nReact-JS; Vite;CSS; Responsive-Design`];
 
 export const INFO_TEXT_ABOUT_SECTION_1 = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
 Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
@@ -61,6 +73,7 @@ export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}
 
 // Pfade zu den Bildern für die Projekte (ProjectCard)
 const ICON_PATH = '/icons/';
+export const ICON_SIZE_PX = 120;
 
 export const PATH_TO_PROJECT_IMAGES = {
     stratego: `${ICON_PATH}strategoLogo.png`,
@@ -75,16 +88,3 @@ export const PROJECT_URLS = {
     website: 'https://github.com/DenKim94/PRJ_myPortfolioWebsite',
 }
 
-/* Relative Schwellenwerte (0-1) für die Anpassung des Offsets beim Scrollefffekt 
-im benötigten Format von framer-motion: [start, end] */
-export const SCROLL_OFFSET_DEFAULT    = ["0 1", "1 1"];
-export const SCROLL_OFFSET_MIN        = ["0 1", "0.55 1"]; 
-export const SCROLL_OFFSET_MEDIUM     = ["0 1", "0.8 1"];
-export const SCROLL_OFFSET_MAX        = ["0 1", "1.33 1"];
-
-// Relativer Skalierungsfaktor für den Start des Scrolleffekts
-export const SCROLL_SCALING_FACTOR    = 0.6; 
-
-// Absoluter Schwellenwert (in px) für die Breite des Browserfensters
-export const SCROLL_THRESHOLD_LOW     = 1300;
-export const SCROLL_THRESHOLD_HIGH    = 1700;
