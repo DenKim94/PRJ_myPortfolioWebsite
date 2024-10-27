@@ -30,14 +30,12 @@ export const SCROLL_THRESHOLD_HIGH    = 1700;
 // Text in der Info-Box auf der Startseite
 export const INFO_TEXT_START_SECTION = `Willkommen auf meiner Webseite!
 Hier wirst du meinen bisherigen persönlichen und beruflichen Werdegang kennenlernen. 
-Zudem stelle ich dir meine Softwareprojekte vor, die ich in meiner Freizeit entwickelt habe.
+Zudem stelle ich dir meine Softwareprojekte vor, die ich bisher in meiner Freizeit entwickelt habe.
 
-Bei Fragen, Feedback oder Jobangeboten freue ich mich über deine E-Mail.`;
+Bei Fragen, Feedback oder Anfragen zum Lebenslauf freue ich mich über deine E-Mail.`;
 
 // Text für die allgemeine Beschreibung der Projektseite
 export const GENERAL_PROJECT_DESCRIPTION = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`;
 
 
@@ -64,7 +62,10 @@ Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich
 
 // Pfade zu den Bildern für die Diashow (Photoslider)
 const PATH_TO_IMAGES = 'src/assets/images/';
-const IMAGE_NAMES = ['IMG_2113.png', 'IMG_4041.png', 'IMG_4461.png', 'IMG_2716.png'];
+const IMAGE_NAMES = ['IMG_2710.png', 'IMG_4041.png', 
+                    'IMG_2610.png', 'IMG_2716.png',
+                    'IMG_4461.png', 'IMG_4481.png'];
+
 export const DURATION_IMAGE_ANIMATION = 3200;  // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
 export const PHOTO_BORDER_COLOR = 'black';
 export const PHOTO_BORDER_WIDTH = '10px';

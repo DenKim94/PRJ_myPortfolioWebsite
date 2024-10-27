@@ -24,6 +24,8 @@
     max-height: var(--maxHeightProjectCard, 450px);
     min-width: var(--minWidthProjectCard, 250px);
     min-height: var(--minHeightProjectCard, 450px);
+    height: 100%;
+    width: 80%;
     margin: auto;
     padding: 10px;
 }
@@ -54,12 +56,18 @@
     justify-content: center;
 }
 
+.project-card-content{
+    height: 100%;
+    width: 85%;
+}
+
 .project-card-description{
     padding-left: 10px;
     padding-right: 10px;
     max-height: 150px;
     text-align: left;
     overflow-y: scroll;
+    margin: auto;
 }
 
 @media(max-width: 970px){
