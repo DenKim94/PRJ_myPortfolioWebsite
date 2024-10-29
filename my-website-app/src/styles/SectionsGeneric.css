@@ -6,6 +6,7 @@
 }
 
 .contact-section{
+    min-height: var(--minHeightSections);
     height: calc(100vh - calc(var(--padding-topAbsValue, 60px)*2));
 }
 

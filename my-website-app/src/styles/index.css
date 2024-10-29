@@ -1,22 +1,23 @@
 :root {
   --minAppWidth: 420px;
+  --minAppHeight: 800px;
   --padding-relValue: 20%;
   --padding-topAbsValue: 60px;
   --sidebarWidth: 250px;
   --maxWidthSections: 1600px;
+  --minHeightSections: 720px;
   --marginLeft-Logo: 35px;
   --marginRight-Nav: 0px;
   --marginRight-Footer: 35px;
   --animationDelay: 1.5s;
   --photoFrameSize: 360px;
-  --minHeightSections: 600px;
   --offsetImageContainer: 120px;
   --minWidthProjectCard: 240px;
   --maxWidthProjectCard: 350px;
-  --maxHeightProjectCard: 400px;
-  --minHeightProjectCard: 350px;
-  --marginProjectCard: 10px;
-  --numberVisibleProjectCards: 3;
+  --maxHeightProjectCard: 250px;
+  --minHeightProjectCard: 100px;
+  --marginProjectCard: 50px;
+  --numberVisibleProjectCards: 10;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;
@@ -35,7 +36,7 @@ body {
   display: flex;
   place-items: center;
   width: 100%; 
-  min-height: 100vh;
+  min-height: var(--minAppHeight);
 }
 
 h1 {

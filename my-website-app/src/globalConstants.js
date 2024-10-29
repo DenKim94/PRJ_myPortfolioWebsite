@@ -46,14 +46,14 @@ export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
 
 // Texte für die spezifische Beschreibung der aufgelisteten Projekte
 export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: Onlinespiel`, 
-    `Aufwand: ca. 400 Stunden`, `Learnings: \nReact-JS; NodeJS; Cypress`]; 
+    `Aufwand: ca. 400 Stunden`, `Learnings: React-JS; NodeJS; Cypress`]; 
 
-export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: \nTool zur Stromkostenanalyse`, 
-    `Aufwand: ca. 55 Stunden`, `Learnings: \nPython; SQLite; CustomTkinter`];
+export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: Tool zur Stromkostenanalyse`, 
+    `Aufwand: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
 
 export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Webseite`, 
     `Aufwand: ca. XXX Stunden`, 
-    `Learnings: \nReact-JS; Vite;CSS; Responsive-Design`];
+    `Learnings: React-JS; Vite;CSS; Responsive-Design`];
 
 export const INFO_TEXT_ABOUT_SECTION_1 = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
 Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
