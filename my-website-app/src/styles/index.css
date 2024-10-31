@@ -3,7 +3,8 @@
   --minAppHeight: 640px;
   --minHeightCardContainer: 320px;
   --padding-relValue: 15%;
-  --padding-topAbsValue: 60px;
+  --minHeightHeader: 60px;
+  --padding-topAbsValue: 50px;
   --sidebarWidth: 250px;
   --maxWidthSections: 1600px;
   --minHeightSections: 640px;
