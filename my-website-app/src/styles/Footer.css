@@ -20,5 +20,18 @@ footer {
 }
 
 #copyright {
-    margin-right: var( --marginRight-Footer);
+    margin-right: var(--marginRight-Footer);
+}
+
+@media screen and (max-width: 420px) and (max-height: 820px){
+    #impressum{
+        margin-left: calc(var(--marginLeft-Logo)*0.5);
+        font-weight: 300; 
+        font-size: medium; 
+    }
+    #copyright{
+        margin-right: calc(var(--marginRight-Footer)*0.5);
+        font-weight: 300;
+        font-size: medium; 
+    }
 }

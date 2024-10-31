@@ -41,7 +41,7 @@ const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}
 
 ProjectCard.propTypes = {
     projectName: PropTypes.string.isRequired,
-    projectDescription: PropTypes.string,
+    projectDescription: PropTypes.arrayOf(PropTypes.string),
     projectURL: PropTypes.string.isRequired,
     projectImage: PropTypes.string,
 };

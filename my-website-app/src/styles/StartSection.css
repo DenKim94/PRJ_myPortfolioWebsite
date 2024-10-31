@@ -3,7 +3,7 @@
 .start-content-container{
     margin-top: var(--padding-topAbsValue);
     display: flex;
-    align-items: none;
+    align-items: stretch; /* Anpassen */
     flex-direction: row;
     justify-content: space-between;
     height: 90%;
@@ -14,23 +14,25 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .greeting-text {
     font-size: 2rem;
+    width: 100%;
+    text-align: left;
 }
 
 .description-text{
     display: flex;
     text-align: left;
-    padding-right: 5%;
     font-size: 1.1rem;
     opacity: 0;
     transform: translateY(20px);
     animation: slideUp 1.3s ease-out forwards;
     animation-delay: var(--animationDelay); 
-    height: 80%; /* same height as .start-content-container */
+    height: 100%; /* same height as .start-content-container */
+    width: 100%;
     overflow-y: auto;
     white-space: pre-line;
 }
@@ -82,26 +84,30 @@
     }
 }
 
-@media(max-width: 820px){
+/* Mobile view: tablet */
+@media screen and (max-width: 800px){
     .start-content-container{
         flex-direction: column;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: calc(var(--padding-topAbsValue)*0.75);
     }
     .info-text-container{
         width: 100%;
-        height: 35%;
+        height: 40%;
         align-items: center;
         margin-bottom: 10px;
+        margin-right: 0;
     }
     .greeting-text{
-        height: 10%;
+        height: 20%;
+        text-align: center;
     }
     .description-text{
         text-align: center;
         height: 100%;
         line-height: 1.2;
         margin-bottom: 15px;
+        padding-right: 0;
     }
     .image-container{
         width: 40%;
@@ -117,4 +123,37 @@
         height: 90%;
     }
 }
+
+/* Mobile view: smartphone */
+@media screen and (max-width: 420px) and (max-height: 820px){
+    .start-content-container{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .info-text-container{
+        width: 100%;
+        height: 40%;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .greeting-text{
+        height: 65%;
+        font-size: 1.8rem;
+    }
+    .description-text{
+        text-align: center;
+        height: 100%;
+        line-height: 1.05;
+        margin-bottom: 10px;
+        padding-right: 0;
+    }
+    .image-container{
+        min-width: calc(var(--photoFrameSize)*0.8); 
+        min-height: calc(var(--photoFrameSize)*0.8);
+        margin: 0 auto;
+    }
+}
+
 

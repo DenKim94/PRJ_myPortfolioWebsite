@@ -13,10 +13,11 @@
     max-height: 10vh;
     min-width: calc(var(--minAppWidth)*0.9);
     min-height: var(--minHeightProjectCard, 50px);
-    height: 90%;
+    height: 100%;
     width: 80%;
     margin: auto;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease, max-height 0.3s ease-in-out;
     position: relative;
@@ -99,10 +100,10 @@
 }
 
 .project-card:hover{
-    transform: scale(1.2); /* Erhöht Größe auf 110% */
+    transform: scale(1.1); /* Erhöht Größe auf 110% */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensiviert den Schatten für ein "Hervorheben" */
     z-index: 10; 
-    max-height: 25vh;
+    max-height: 21vh;
 }
 
 .project-card:hover .project-card-description{
@@ -113,6 +114,8 @@
 @media(max-width: 820px){
     .project-card:hover{
         transform: scale(1.1); /* Erhöht Größe auf 110% */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensiviert den Schatten für ein "Hervorheben" */
+        z-index: 10; 
         max-height: 16vh;
     } 
 }
@@ -120,5 +123,38 @@
 @media(min-height: 720px){
     .project-card-content{
         max-height: 25vh;
+    }
+}
+
+/* Mobile view: smartphone */
+@media screen and (max-width: 420px) and (max-height: 820px){
+    .project-card{
+        min-width: calc(var(--minAppWidth)*0.5);
+        max-width: calc(var(--minAppWidth)*0.75);
+        min-height: calc(var(--minHeightProjectCard, 50px)*0.7);
+        max-height: 100%;
+    }
+    .project-reference img{
+        margin: 10px;
+    }
+
+    .project-reference{
+        padding-top: 10px;
+    }
+
+    .project-card-title{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .general-project-description{
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
+    .project-card-description{
+        display: none;
     }
 }

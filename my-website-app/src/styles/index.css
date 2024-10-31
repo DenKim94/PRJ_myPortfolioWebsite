@@ -1,11 +1,12 @@
 :root {
-  --minAppWidth: 420px;
-  --minAppHeight: 800px;
-  --padding-relValue: 20%;
+  --minAppWidth: 360px;
+  --minAppHeight: 640px;
+  --minHeightCardContainer: 320px;
+  --padding-relValue: 15%;
   --padding-topAbsValue: 60px;
   --sidebarWidth: 250px;
   --maxWidthSections: 1600px;
-  --minHeightSections: 720px;
+  --minHeightSections: 640px;
   --marginLeft-Logo: 35px;
   --marginRight-Nav: 0px;
   --marginRight-Footer: 35px;
@@ -17,7 +18,7 @@
   --maxHeightProjectCard: 250px;
   --minHeightProjectCard: 100px;
   --marginProjectCard: 50px;
-  --numberVisibleProjectCards: 10;
+  --numberVisibleProjectCards: 3;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;
@@ -42,4 +43,18 @@ body {
 h1 {
   font-size: 2.1em;
   line-height: 1.1;
+}
+
+@media screen and (max-width: 420px) and (max-height: 820px) {
+  :root {
+    background: #a557ff; 
+    line-height: 1.1;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    line-height: 1.1;
+  }
 }
