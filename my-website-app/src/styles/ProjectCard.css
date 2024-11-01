@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    max-height: 20px;
+    max-height: 15px;
     max-width: 80%;
     width: 100%;
     align-items: center;
@@ -51,15 +51,15 @@
 
 .project-card-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
     max-height: 15vh;
     max-width: 80%;
     height: 90%;
     width: 100%;
-    align-items: flex-start; 
-    justify-content: center;
-    padding-top: 5px;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .project-card-description{
@@ -102,7 +102,21 @@
     
     .project-reference{
         padding-top: 10px;
+        margin-right: 0;
+    }
+
+    .project-card-content{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center; 
+        justify-content: center;
         margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .project-card-title{
+        justify-content: center;
     }
 
 }
@@ -123,12 +137,21 @@
 
     .project-reference{
         padding-top: 10px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
-
+    
+    .project-card-content{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center; 
+        justify-content: flex-start;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    
     .project-card-title{
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
 
 }

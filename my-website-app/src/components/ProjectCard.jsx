@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import './../styles/PortfolioSection.css'
 import './../styles/ProjectCard.css'
+import Button from './Button.jsx'
 import * as globalConstants from './../globalConstants.js'
 
 const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}) => {
@@ -29,7 +30,7 @@ const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}
             </a>
             <div className='project-card-content'>
                 <h3 className='project-card-title'>{projectName}</h3>
-                <ul id={`card-description-${projectName}`} 
+                {/* <ul id={`card-description-${projectName}`} 
                     className='project-card-description' >
                         
                     {projectDescription.map((item, index) => (
@@ -37,7 +38,10 @@ const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}
                        <strong>{item.split(':')[0]}</strong>: {item.split(':')[1]}
                     </li>
                     ))}
-                </ul>
+                </ul> */}
+                <Button buttonID = {`button-${projectName}`} 
+                        buttonText = {"Mehr Infos"} 
+                        callBackFcn = {() => console.log("Clicked button: ", projectName) }/>
             </div>
         </div>
      );
