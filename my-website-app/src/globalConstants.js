@@ -74,7 +74,7 @@ export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}
 
 // Pfade zu den Bildern für die Projekte (ProjectCard)
 const ICON_PATH = '/icons/';
-export const ICON_SIZE_PX = 120;
+export const ICON_SIZE_PX = 90;
 
 export const PATH_TO_PROJECT_IMAGES = {
     stratego: `${ICON_PATH}strategoLogo.png`,

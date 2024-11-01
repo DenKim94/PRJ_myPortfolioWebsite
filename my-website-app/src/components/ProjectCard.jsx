@@ -1,18 +1,12 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 import './../styles/PortfolioSection.css'
 import './../styles/ProjectCard.css'
 import * as globalConstants from './../globalConstants.js'
 
 const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}) => {
-    const [hoveredCard, setHoveredCard] = useState(null); 
 
     return ( 
-        <div className='project-card'
-            onMouseEnter={() => setHoveredCard(projectName)}
-            onMouseLeave={() => setHoveredCard(null)} 
-        >            
-            {/* TO-DO: Icon mit Verlinkung zum Live-Projekt*/}
+        <div className='project-card'>            
             <a className='project-reference' href={projectURL} target="_blank" rel="noopener noreferrer">
                 <img id={`card-image-${projectName}`} 
                         src={projectImage} 
@@ -25,8 +19,7 @@ const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}
             <div className='project-card-content'>
                 <h3 className='project-card-title'>{projectName}</h3>
                 <ul id={`card-description-${projectName}`} 
-                    className='project-card-description'
-                    style={{ display: hoveredCard === projectName ? 'block' : 'block' }} >
+                    className='project-card-description' >
                         
                     {projectDescription.map((item, index) => (
                     <li key={index} style={{ whiteSpace: 'pre-line' }}>

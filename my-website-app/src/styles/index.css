@@ -16,8 +16,8 @@
   --offsetImageContainer: 120px;
   --minWidthProjectCard: 240px;
   --maxWidthProjectCard: 350px;
-  --maxHeightProjectCard: 250px;
-  --minHeightProjectCard: 100px;
+  --maxHeightProjectCard: 240px;
+  --minHeightProjectCard: 140px;
   --marginProjectCard: 50px;
   --numberVisibleProjectCards: 3;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;

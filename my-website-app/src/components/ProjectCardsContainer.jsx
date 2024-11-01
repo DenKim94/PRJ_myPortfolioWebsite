@@ -22,7 +22,7 @@ const ProjectCardsContainer = () => {
                 projectDescription={globalConstants.PROJECT_DESCRIPTION_WEBSITE}
                 projectURL={globalConstants.PROJECT_URLS.website}
                 projectImage={globalConstants.PATH_TO_PROJECT_IMAGES.website}
-            />
+            />        
         </div>
      );
 }
