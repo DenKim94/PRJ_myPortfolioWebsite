@@ -4,9 +4,20 @@ import './../styles/ProjectCard.css'
 import * as globalConstants from './../globalConstants.js'
 
 const ProjectCard = ({projectName, projectDescription, projectURL, projectImage}) => {
+    let moreCardsAvailable = false;
+
+    if(globalConstants.PROJECT_CARDS_DATA.length > globalConstants.MAX_NUM_VISIBLE_CARDS){
+        moreCardsAvailable = true;
+    }
+
+    // Dynamische Anpassung der Card-Höhe in Äbhängigkeit der Anzahl der verwendeten Cards
+    const height = moreCardsAvailable ? 
+                    `calc(92% / ${globalConstants.MAX_NUM_VISIBLE_CARDS})`
+                    : `calc(82% / ${globalConstants.MAX_NUM_VISIBLE_CARDS})`;  
 
     return ( 
-        <div className='project-card'>            
+        <div className='project-card'
+        style={{ height }}>            
             <a className='project-reference' href={projectURL} target="_blank" rel="noopener noreferrer">
                 <img id={`card-image-${projectName}`} 
                         src={projectImage} 

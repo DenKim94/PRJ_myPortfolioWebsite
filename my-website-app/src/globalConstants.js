@@ -40,6 +40,8 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 
 
 // Spezifische Projektangaben
+export const MAX_NUM_VISIBLE_CARDS = 3;
+
 export const PROJECT_NAME_STRATEGO = 'Stratego-Web';
 export const PROJECT_NAME_ECA = 'Enery Costs Analyzer'; 
 export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
@@ -55,6 +57,46 @@ export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Webseite`,
     `Aufwand: ca. XXX Stunden`, 
     `Learnings: React-JS; Vite;CSS; Responsive-Design`];
 
+// URLs zu den Webseiten der Projekte
+export const PROJECT_URLS = {
+    stratego: 'https://stratego-web.netlify.app',
+    eca: 'https://github.com/DenKim94/PRJ_ECA',
+    website: 'https://github.com/DenKim94/PRJ_myPortfolioWebsite',
+}
+
+// Pfade zu den Bildern für die Projekte (ProjectCard)
+const ICON_PATH = '/icons/';
+export const ICON_SIZE_PX = 90;
+
+export const PATH_TO_PROJECT_IMAGES = {
+    stratego: `${ICON_PATH}strategoLogo.png`,
+    eca: `${ICON_PATH}ecaLogo.png`,
+    website: `${ICON_PATH}myWebLogo.ico`,
+}
+
+// Array zum Rendern der Card-Komponenten     
+export const PROJECT_CARDS_DATA = [
+    {
+        projectName: PROJECT_NAME_STRATEGO,
+        projectDescription: PROJECT_DESCRIPTION_STRATEGO,
+        projectURL: PROJECT_URLS.stratego,
+        projectImage: PATH_TO_PROJECT_IMAGES.stratego,
+    },
+    {
+        projectName: PROJECT_NAME_ECA,
+        projectDescription: PROJECT_DESCRIPTION_ECA,
+        projectURL: PROJECT_URLS.eca,
+        projectImage: PATH_TO_PROJECT_IMAGES.eca,
+    },
+    {
+        projectName: PROJECT_NAME_WEBSITE,
+        projectDescription: PROJECT_DESCRIPTION_WEBSITE,
+        projectURL: PROJECT_URLS.website,
+        projectImage: PATH_TO_PROJECT_IMAGES.website,
+    },       
+];    
+
+// Beschreibungs-/Infotexte für die jeweiligen Abshcnitte 
 export const INFO_TEXT_ABOUT_SECTION_1 = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
 Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
 Aus Interesse entwickelte sich ein Wunsch nach Veränderung. Daher bin ich seit knapp zwei Jahren als Softwareentwickler tätig. 
@@ -72,20 +114,7 @@ export const PHOTO_BORDER_WIDTH = '10px';
 
 export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}`);
 
-// Pfade zu den Bildern für die Projekte (ProjectCard)
-const ICON_PATH = '/icons/';
-export const ICON_SIZE_PX = 90;
 
-export const PATH_TO_PROJECT_IMAGES = {
-    stratego: `${ICON_PATH}strategoLogo.png`,
-    eca: `${ICON_PATH}ecaLogo.png`,
-    website: `${ICON_PATH}myWebLogo.ico`,
-}
 
-// URLs zu den Webseiten der Projekte
-export const PROJECT_URLS = {
-    stratego: 'https://stratego-web.netlify.app',
-    eca: 'https://github.com/DenKim94/PRJ_ECA',
-    website: 'https://github.com/DenKim94/PRJ_myPortfolioWebsite',
-}
+
 
