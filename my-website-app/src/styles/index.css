@@ -8,6 +8,7 @@
   --sidebarWidth: 250px;
   --maxWidthSections: 1600px;
   --minHeightSections: 640px;
+  --minHeightSectionsOffset: 100px;
   --marginLeft-Logo: 35px;
   --marginRight-Nav: 0px;
   --marginRight-Footer: 35px;

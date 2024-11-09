@@ -35,8 +35,9 @@ Zudem stelle ich dir meine Softwareprojekte vor, die ich bisher in meiner Freize
 Bei Fragen, Feedback oder Anfragen zum Lebenslauf freue ich mich über deine E-Mail.`;
 
 // Text für die allgemeine Beschreibung der Projektseite
-export const GENERAL_PROJECT_DESCRIPTION = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`;
+export const GENERAL_PROJECT_DESCRIPTION = `Im Rahmen meiner fachlichen und persönlichen Weiterbildung habe ich in meiner Freizeit eine Reihe von Webentwicklungsprojekten umgesetzt, 
+die mein Wissen und meine Fähigkeiten in modernen Webtechnologien und Frameworks erweitern. 
+Diese Projekte haben es mir ermöglicht, ein grundlegendes Verständnis sowohl für die client- als auch für die serverseitige Entwicklung zu erlangen und alle Projektphasen von der Konzeption über die Implementierung bis zum Deployment eigenständig zu durchlaufen.`;
 
 
 // Spezifische Projektangaben
@@ -96,7 +97,7 @@ export const PROJECT_CARDS_DATA = [
     },       
 ];    
 
-// Beschreibungs-/Infotexte für die jeweiligen Abshcnitte 
+// Beschreibungs-/Infotexte für die jeweiligen Abschnitte 
 export const INFO_TEXT_ABOUT_SECTION_1 = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
 Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
 Aus Interesse entwickelte sich ein Wunsch nach Veränderung. Daher bin ich seit knapp zwei Jahren als Softwareentwickler tätig. 
