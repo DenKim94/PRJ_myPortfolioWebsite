@@ -1,5 +1,5 @@
 // Globale Konstanten für die Webanwendung
-// Update: 25.10.2024
+// Update: 09.11.2024
 
 // Schwellenwerte für das responsive Design
 export const THRESHOLD_MAX_APP_WIDTH = 800;     
@@ -49,14 +49,15 @@ export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
 
 // Texte für die spezifische Beschreibung der aufgelisteten Projekte
 export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: Onlinespiel`, 
-    `Aufwand: ca. 400 Stunden`, `Learnings: React-JS; NodeJS; Cypress`]; 
+    `Aufwand: ca. 400 Stunden`, 
+    `Learnings: React; NodeJS & ExpressJS; Cypress`]; 
 
 export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: Tool zur Stromkostenanalyse`, 
     `Aufwand: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
 
-export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Webseite`, 
+export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Eigene Webseite`, 
     `Aufwand: ca. XXX Stunden`, 
-    `Learnings: React-JS; Vite;CSS; Responsive-Design`];
+    `Learnings: React; CSS; Responsive Design; Vitest`];
 
 // URLs zu den Webseiten der Projekte
 export const PROJECT_URLS = {
@@ -75,6 +76,15 @@ export const PATH_TO_PROJECT_IMAGES = {
     website: `${ICON_PATH}myWebLogo.ico`,
 }
 
+// Pfade zu den Demos der Projekte
+const DEMO_PATH = 'src/assets/demos/';
+
+export const PATH_TO_PROJECT_DEMOS = {
+    stratego: `${DEMO_PATH}strategoWeb_demo.mp4`,
+    eca: `${DEMO_PATH}eca_demo.mp4`,
+    website: null
+};
+
 // Array zum Rendern der Card-Komponenten     
 export const PROJECT_CARDS_DATA = [
     {
@@ -82,18 +92,21 @@ export const PROJECT_CARDS_DATA = [
         projectDescription: PROJECT_DESCRIPTION_STRATEGO,
         projectURL: PROJECT_URLS.stratego,
         projectImage: PATH_TO_PROJECT_IMAGES.stratego,
+        projectDemo: PATH_TO_PROJECT_DEMOS.stratego
     },
     {
         projectName: PROJECT_NAME_ECA,
         projectDescription: PROJECT_DESCRIPTION_ECA,
         projectURL: PROJECT_URLS.eca,
         projectImage: PATH_TO_PROJECT_IMAGES.eca,
+        projectDemo: PATH_TO_PROJECT_DEMOS.eca
     },
     {
         projectName: PROJECT_NAME_WEBSITE,
         projectDescription: PROJECT_DESCRIPTION_WEBSITE,
         projectURL: PROJECT_URLS.website,
         projectImage: PATH_TO_PROJECT_IMAGES.website,
+        projectDemo: PATH_TO_PROJECT_DEMOS.website
     },       
 ];    
 

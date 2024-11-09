@@ -1,2 +1,44 @@
 @import url('index.css');
 
+.card-infos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    border: solid 2px #ffffff;
+    border-radius: 15px;
+    max-width: calc(var(--maxWidthSections)*0.9);
+    min-width: calc(var(--minAppWidth)*0.9);
+    min-height: var(--minHeightInfoCard);
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.info-project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.info-project-demo{
+    border: solid 1px #ffffff;
+    border-radius: 15px;
+}
+
+.generic-button{
+    margin-bottom: 20px;
+}
+
+#info-project-description{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 0;
+}

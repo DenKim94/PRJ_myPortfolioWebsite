@@ -21,6 +21,7 @@
   --minHeightProjectCard: 140px;
   --marginProjectCard: 50px;
   --numberVisibleProjectCards: 3;
+  --minHeightInfoCard: 350px;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;
