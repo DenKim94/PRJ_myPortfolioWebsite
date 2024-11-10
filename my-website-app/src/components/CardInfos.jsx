@@ -5,6 +5,20 @@ import Button from './Button.jsx'
 import { motion } from 'framer-motion';
 
 
+/**
+ * A component that renders a container with project informations.
+ * The component renders a CardInfos component if the shared state 'visibleCardInfo' is set to true.
+ * Otherwise, it renders nothing.
+ * 
+ * The component uses framer motion to slide in and out of the screen.
+ * The animation duration can be adjusted by changing the 'transition' property.
+ * 
+ * The component also renders a button to close the container.
+ * When the button is clicked, the component changes a shared state to display the project information by another component.
+ * 
+ * @returns {JSX.Element} The rendered component.
+ */
+
 const slideAnimation = {
     hidden: { y: '-100%', opacity: 0 },  // Start außerhalb des Bildschirms auf der linken Seite
     visible: { y: 0, opacity: 1 },       // In die Sicht schieben

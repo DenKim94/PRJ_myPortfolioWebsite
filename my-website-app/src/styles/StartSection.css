@@ -1,5 +1,11 @@
 @import url('index.css');
 
+.start-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .start-content-container{
     margin-top: 0;
     display: flex;

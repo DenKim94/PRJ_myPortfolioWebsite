@@ -40,7 +40,8 @@ die mein Wissen in modernen Webtechnologien und Frameworks erweitern.
 Diese Projekte haben es mir ermöglicht, ein grundlegendes Verständnis sowohl für die client- als auch für die serverseitige Entwicklung zu erlangen und alle Projektphasen von der Konzeption über die Implementierung und Debugging bis zum Deployment eigenständig zu durchlaufen.`;
 
 
-// Spezifische Projektangaben
+// Spezifische Angaben für die Card-Komponenten
+export const CARD_ANIMATION_DURATION = 0.3; // Dauer der Animation in Sekunden
 export const MAX_NUM_VISIBLE_CARDS = 3;
 
 export const PROJECT_NAME_STRATEGO = 'Stratego-Web';
