@@ -54,6 +54,12 @@
         max-height: var(--maxHeightDemo);
         width: 70%;
     }
+
+    #close-button{
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
 }
 
 @media(max-width: 1400px) and (max-height: 820px){
@@ -68,6 +74,12 @@
     .info-project-content{
         margin-bottom: 5px;
     }
+
+    #close-button{
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
 }
 
 /* Mobile view: tablet */
@@ -76,28 +88,27 @@
         max-height: var(--maxHeightDemo);
         width: 80%;
     }
+
+    #close-button{
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
 }
 
 @media(max-width: 1040px) and (max-height: 820px){
     .info-project-content{
-        max-height: calc(var(--maxHeightDemo)*0.8);
-        width: 85%;
-        margin-bottom: 5px;
+        width: 90%;
+        margin-bottom: 20px;
     }
 
     #info-project-description{
         font-size: medium;
-        margin-left: 20px;
-        margin-right: 10px;
     }
 
-   .card-infos-container{
-       height: 80%;
-   }
-
-   .generic-button{
-        margin-top: 10px;
-        margin-bottom: 15px;
+    #close-button{
+        margin-top: 5px;
+        margin-bottom: 25px;
     }
 
 }

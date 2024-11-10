@@ -55,7 +55,8 @@ export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: Onlinespiel`,
 export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: Tool zur Stromkostenanalyse`, 
     `Aufwand: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
 
-export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Portfolio Webseite`, 
+export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: 
+    Webseite zur Vorstellung der angeeigneten fachlichen Kenntnisse und des beruflichen Werdegangs`, 
     `Aufwand: ca. XXX Stunden`, 
     `Learnings: React; CSS; Responsive Design; Vitest`];
 

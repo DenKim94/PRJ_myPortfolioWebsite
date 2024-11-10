@@ -42,7 +42,7 @@ const CardInfos = () => {
 
             </div>
             <Button
-                buttonID={`close-button-${projInfo?.projectName}`}
+                buttonID={`close-button`}
                 buttonText={"Schließen"}
                 callBackFcn={() => setVisibleCardInfo({isVisible: false})}
             />
