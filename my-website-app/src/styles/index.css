@@ -2,6 +2,7 @@
   --minAppWidth: 360px;
   --minAppHeight: 640px;
   --minHeightCardContainer: 320px;
+  --minHeightDescriptionText: 150px;
   --padding-relValue: 15%;
   --minHeightHeader: 60px;
   --padding-topAbsValue: 50px;
@@ -14,7 +15,7 @@
   --marginRight-Footer: 35px;
   --animationDelay: 1.5s;
   --photoFrameSize: 360px;
-  --offsetImageContainer: 120px;
+  --offsetImageContainer: 0;
   --minWidthProjectCard: 240px;
   --maxWidthProjectCard: 350px;
   --maxHeightProjectCard: 240px;

@@ -60,10 +60,7 @@ const InfoTextContainer = () => {
                         'Denis.', globalConstants.HOLD_ANIMATION_DURATION_1,   
                     ]}
                 />
-            </h1>
-            <p className="description-text">
-                {globalConstants.INFO_TEXT_START_SECTION}
-            </p>       
+            </h1>     
         </div>
     );
 }

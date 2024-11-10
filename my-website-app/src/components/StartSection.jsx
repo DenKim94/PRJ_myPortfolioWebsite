@@ -15,8 +15,11 @@ import * as globalConstants from './../globalConstants.js'
 function StartSection() {
     return ( 
         <section id='start'className='start-section'>
+            <InfoTextContainer />
             <div className='start-content-container'>
-                <InfoTextContainer />
+                <p className="description-text">
+                    {globalConstants.INFO_TEXT_START_SECTION}
+                </p>  
                 <PhotoSlider fullPhotoPath = {globalConstants.fullPhotoPath} />
             </div>
         </section>
