@@ -4,6 +4,7 @@ import './../styles/ProjectCard.css'
 import Button from './Button.jsx'
 import * as globalConstants from './../globalConstants.js'
 import { useSharedContext } from './../context/sharedStates';
+import { motion } from 'framer-motion';
 
 /**
  * A component that renders a project card.
@@ -18,6 +19,12 @@ import { useSharedContext } from './../context/sharedStates';
  * @param {string} projectImage The URL of the preview image of the project.
  * @returns {JSX.Element} The rendered component.
  */
+
+const cardVariants = {
+    hidden: { y: 80, opacity: 0 },  // Startposition: etwas unterhalb und unsichtbar
+    visible: { y: 0, opacity: 1 },  // Endposition: in die normale Position gleiten
+  };
+
 const ProjectCard = ({cardIndex = undefined, projectName, projectURL, projectImage}) => {
     const { setVisibleCardInfo } = useSharedContext();
     let moreCardsAvailable = false;
@@ -32,7 +39,14 @@ const ProjectCard = ({cardIndex = undefined, projectName, projectURL, projectIma
                     : `calc(82% / ${globalConstants.MAX_NUM_VISIBLE_CARDS})`;  
 
     return ( 
-        <div className='project-card' style={{ height }}>
+        <motion.div
+        className="project-card"  // CSS-Klasse bleibt für das Styling erhalten
+        style={{ height }}
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5 }}  // Dauer der Animation
+      >
             <a className='project-reference' href={projectURL} target="_blank" rel="noopener noreferrer">
                 <img
                     id={`card-image-${projectName}`}
@@ -51,7 +65,7 @@ const ProjectCard = ({cardIndex = undefined, projectName, projectURL, projectIma
                     callBackFcn={() => setVisibleCardInfo({cardIndex: cardIndex, isVisible: true})}
                 />
             </div>
-        </div>
+        </motion.div>
      );
 }
 

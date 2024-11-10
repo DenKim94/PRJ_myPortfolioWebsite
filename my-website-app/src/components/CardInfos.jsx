@@ -2,14 +2,27 @@ import * as globalConstants from './../globalConstants.js'
 import './../styles/CardInfos.css'
 import { useSharedContext } from './../context/sharedStates';
 import Button from './Button.jsx'
+import { motion } from 'framer-motion';
 
+
+const slideAnimation = {
+    hidden: { y: '-100%', opacity: 0 },  // Start außerhalb des Bildschirms auf der linken Seite
+    visible: { y: 0, opacity: 1 },       // In die Sicht schieben
+    exit: { y: '-100%', opacity: 0 }     // Beim Schließen nach links herausgleiten
+  };
 
 const CardInfos = () => {
     const { visibleCardInfo, setVisibleCardInfo } = useSharedContext();
     const projInfo = globalConstants.PROJECT_CARDS_DATA[visibleCardInfo?.cardIndex];
 
     return ( 
-        <div className='card-infos-container'>
+        <motion.div className='card-infos-container'
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={slideAnimation}
+            transition={{ duration: 0.5 }}  // Dauer der Animation (kann angepasst werden)
+        >
             <h2 id='info-project-name'>{projInfo?.projectName}</h2>
             <div className='info-project-content'>
                 <ul id='info-project-description'>
@@ -33,7 +46,7 @@ const CardInfos = () => {
                 buttonText={"Schließen"}
                 callBackFcn={() => setVisibleCardInfo({isVisible: false})}
             />
-        </div>
+        </motion.div>
      );
 }
 
