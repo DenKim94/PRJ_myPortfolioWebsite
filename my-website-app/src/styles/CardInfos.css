@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
     border: solid 2px #ffffff;
     border-radius: 15px;
@@ -35,10 +35,93 @@
     margin-bottom: 20px;
 }
 
+#info-project-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #info-project-description{
     list-style-type: none;
     padding-left: 0;
     text-align: left;
     margin-bottom: 20px;
     margin-top: 0;
+}
+
+/* Mobile view: laptop */
+@media(max-width: 1700px) and (max-height: 1050px){
+    .info-project-demo{
+        max-height: var(--maxHeightDemo);
+        width: 70%;
+    }
+}
+
+@media(max-width: 1400px) and (max-height: 820px){
+    .info-project-demo{
+        width: 80%;
+    }
+
+    .card-infos-container{
+        min-height: calc(var(--minHeightInfoCard)*0.8);
+    }
+
+    .info-project-content{
+        margin-bottom: 5px;
+    }
+}
+
+/* Mobile view: tablet */
+@media(max-width: 820px) and (max-height: 1040px){
+    .info-project-demo{
+        max-height: var(--maxHeightDemo);
+        width: 80%;
+    }
+}
+
+@media(max-width: 1040px) and (max-height: 820px){
+    .info-project-content{
+        max-height: calc(var(--maxHeightDemo)*0.8);
+        width: 85%;
+        margin-bottom: 5px;
+    }
+
+    #info-project-description{
+        font-size: medium;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+   .card-infos-container{
+       height: 80%;
+   }
+
+   .generic-button{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+}
+
+/* Mobile view: smartphone */
+@media screen and (max-width: 420px) and (max-height: 820px){
+
+    #info-project-description{
+        font-size: small;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .info-project-content{
+        margin-bottom: 5px;
+    }
+
+    .info-project-demo{
+        min-height: calc(var(--minHeightInfoCard)*0.3);
+        width: 85%;
+    }
+
+    .generic-button{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
 }

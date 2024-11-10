@@ -102,6 +102,7 @@
         height: 20%;
         text-align: center;
     }
+
     .description-text{
         text-align: center;
         height: 100%;
@@ -139,13 +140,15 @@
         margin-right: 0;
     }
     .greeting-text{
-        height: 65%;
+        height: 60%;
         font-size: 1.9rem;
+        margin-top: 45px;
+        margin-bottom: 0;
     }
     .description-text{
         text-align: center;
-        height: 100%;
-        line-height: 1.05;
+        height: 90%;
+        line-height: 1.06;
         margin-bottom: 10px;
         padding-right: 0;
     }

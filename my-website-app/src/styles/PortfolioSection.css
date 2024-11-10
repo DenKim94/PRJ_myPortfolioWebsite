@@ -33,9 +33,10 @@
     max-height: 20px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
-/* Mobile view: laptop*/
+/* Mobile view: laptop */
 @media(max-width: 1400px) and (max-height: 780px){
     .project-cards-container{
         height: calc(var(--minHeightProjectCard)*1.1*var(--numberVisibleProjectCards));
@@ -60,9 +61,11 @@
     }
 
     .general-project-description{
+        font-size: medium;
         margin-right: 10px;
         margin-left: 10px;
         margin-bottom: 15px;
         padding: 5px;
+        max-height: 165px;
     }
 }

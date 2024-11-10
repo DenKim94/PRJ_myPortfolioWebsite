@@ -118,6 +118,9 @@
 
     .project-card-title{
         justify-content: center;
+        font-size: medium;
+        margin-bottom: 0;
+        margin-top: 20px;
     }
 
 }

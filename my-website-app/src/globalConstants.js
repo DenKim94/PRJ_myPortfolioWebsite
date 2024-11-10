@@ -36,8 +36,8 @@ Bei Fragen, Feedback oder Anfragen zum Lebenslauf freue ich mich über deine E-M
 
 // Text für die allgemeine Beschreibung der Projektseite
 export const GENERAL_PROJECT_DESCRIPTION = `Im Rahmen meiner fachlichen und persönlichen Weiterbildung habe ich in meiner Freizeit eine Reihe von Webentwicklungsprojekten umgesetzt, 
-die mein Wissen und meine Fähigkeiten in modernen Webtechnologien und Frameworks erweitern. 
-Diese Projekte haben es mir ermöglicht, ein grundlegendes Verständnis sowohl für die client- als auch für die serverseitige Entwicklung zu erlangen und alle Projektphasen von der Konzeption über die Implementierung bis zum Deployment eigenständig zu durchlaufen.`;
+die mein Wissen in modernen Webtechnologien und Frameworks erweitern. 
+Diese Projekte haben es mir ermöglicht, ein grundlegendes Verständnis sowohl für die client- als auch für die serverseitige Entwicklung zu erlangen und alle Projektphasen von der Konzeption über die Implementierung und Debugging bis zum Deployment eigenständig zu durchlaufen.`;
 
 
 // Spezifische Projektangaben
@@ -55,7 +55,7 @@ export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: Onlinespiel`,
 export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: Tool zur Stromkostenanalyse`, 
     `Aufwand: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
 
-export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Eigene Webseite`, 
+export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: Portfolio Webseite`, 
     `Aufwand: ca. XXX Stunden`, 
     `Learnings: React; CSS; Responsive Design; Vitest`];
 
