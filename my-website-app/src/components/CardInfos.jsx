@@ -35,7 +35,7 @@ const CardInfos = () => {
             animate="visible"
             exit="exit"
             variants={slideAnimation}
-            transition={{ duration: 0.5 }}  // Dauer der Animation (kann angepasst werden)
+            transition={{ duration: globalConstants.CARDINFO_ANIMATION_DURATION }}
         >
             <h2 id='info-project-name'>{projInfo?.projectName}</h2>
             <div className='info-project-content'>

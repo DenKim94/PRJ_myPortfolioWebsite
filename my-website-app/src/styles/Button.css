@@ -21,7 +21,7 @@
     margin-top: 20px;
     margin-right: 10px;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Normaler Schatten für den Button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.1s ease;
 }
 

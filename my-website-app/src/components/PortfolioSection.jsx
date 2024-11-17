@@ -2,7 +2,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import GeneralProjectDescription from './GeneralProjectDescription';
 import ProjectCardsContainer from './ProjectCardsContainer';
-import { SharedStateProvider } from './../context/SharedStateContext';
 import './../styles/SectionsGeneric.css'
 import './../styles/PortfolioSection.css'
 import * as globalConstants from './../globalConstants.js'
@@ -66,7 +65,6 @@ function PortfolioSection() {
   const scaledProgress = useTransform(scrollYProgress, [0, 1], [globalConstants.SCROLL_SCALING_FACTOR, 1]);
 
   return (
-    <SharedStateProvider initialValue={{ cardIndex: undefined, isVisible: false }}>
       <section id='portfolio' className='portfolio-section'>
         <h1 id='portfolio-title'>Meine Projekte</h1>
         <motion.div
@@ -83,7 +81,6 @@ function PortfolioSection() {
           <ProjectCardsContainer />
         </motion.div>
       </section>
-    </SharedStateProvider>
   );
 }
 

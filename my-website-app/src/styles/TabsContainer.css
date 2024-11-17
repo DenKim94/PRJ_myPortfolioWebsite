@@ -1,0 +1,80 @@
+@import url('index.css');
+
+.tabs-container {
+    position: relative;
+    max-width: calc(var(--maxWidthSections)*0.9);
+    max-height: var(--maxHeightProjectCard);
+    min-width: calc(var(--minAppWidth)*0.9);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: var(--borderRadius);
+    /* background-color: #f9f9f9; */
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+}
+
+.tabs-container.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between; /* Sorgt für gleichmäßigen Abstand */
+    gap: 20px; /* Abstand zwischen Tabs */
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.tab {
+    flex: 1; /* Tabs haben die gleiche Breite */
+    padding: 10px 25px;
+    font-weight: 500;
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 254, 254);
+    background-color: #2a282b;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tab.active {
+    opacity: 0.9;
+    background-color: #2a282b;
+    box-shadow: 1px 1px 15px rgb(200, 199, 199, 0.7);
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab.active::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #6157FF, #a927b5);
+    z-index: -1;
+}
+
+.tab:hover {
+    transform: scale(0.95);
+}
+
+.tab-content {
+    font-size: 1rem;
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    color: #fff;
+    height: 90%;
+    margin-bottom: 20px;
+}

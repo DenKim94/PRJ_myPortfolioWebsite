@@ -41,7 +41,8 @@ Diese Projekte haben es mir ermöglicht, ein grundlegendes Verständnis sowohl f
 
 
 // Spezifische Angaben für die Card-Komponenten
-export const CARD_ANIMATION_DURATION = 0.2; // Dauer der Animation in Sekunden
+export const CARD_ANIMATION_DURATION = 0.1; // Dauer der Animation in Sekunden
+export const CARDINFO_ANIMATION_DURATION = 0.5; // Dauer der Animation in Sekunden
 export const MAX_NUM_VISIBLE_CARDS = 3;
 
 export const PROJECT_NAME_STRATEGO = 'Stratego-Web';
@@ -125,12 +126,21 @@ const IMAGE_NAMES = ['IMG_2710.png', 'IMG_4041.png',
                     'IMG_2610.png', 'IMG_2716.png',
                     'IMG_4461.png', 'IMG_4481.png'];
 
-export const DURATION_IMAGE_ANIMATION = 3200;  // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
+export const DURATION_IMAGE_ANIMATION = 3200;       // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
 export const PHOTO_BORDER_COLOR = 'black';
 export const PHOTO_BORDER_WIDTH = '10px';
+export const OBSERVER_THRESHOLD_PHOTOSLIDER = 0.1;  // Relativer Schwellenwert (Anteil der sichtbaren Seite), um die Animation zu aktivieren
 
 export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}`);
 
+// Konstanten für TabsContainer in About-Section
+export const OBSERVER_THRESHOLD_TABS = 0.3;  // Relativer Schwellenwert (Anteil der sichtbaren Seite), um die Animation zu aktivieren
+
+export const TAB_INFOS = [
+    { label: 'Berufserfahrung', contentId: 1 },
+    { label: 'Bildungsweg', contentId: 2 },
+    { label: 'Interessen', contentId: 3 },
+];
 
 
 

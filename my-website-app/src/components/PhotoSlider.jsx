@@ -30,7 +30,7 @@ const PhotoSlider = ({ fullPhotoPath }) => {
         ([entry]) => {
           setIsInView(entry.isIntersecting); // Setze isInView auf true, wenn der Slider sichtbar ist
         },
-        { threshold: 0.1 } // Triggert die Funktion, wenn 10% der Komponente sichtbar sind
+        { threshold: globalConstants.OBSERVER_THRESHOLD_PHOTOSLIDER }
       );
       const sliderElement = sliderRef.current;
 

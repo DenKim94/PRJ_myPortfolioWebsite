@@ -18,7 +18,7 @@ const containerVariants = {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, // Verzögert das Erscheinen der einzelnen Karten
+        staggerChildren: 0.1,  // Verzögert das Erscheinen der einzelnen Karten
       },
     },
   };

@@ -24,6 +24,8 @@
   --numberVisibleProjectCards: 3;
   --minHeightInfoCard: 350px;
   --maxHeightDemo: 420px;
+  --borderRadius: 15px;
+  
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;

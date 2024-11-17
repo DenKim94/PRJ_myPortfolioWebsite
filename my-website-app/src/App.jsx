@@ -4,6 +4,7 @@ import PortfolioSection from './components/PortfolioSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import { SharedStateProvider } from './context/SharedStateContext';
 import './styles/App.css'
 
 /**
@@ -21,14 +22,17 @@ import './styles/App.css'
  * - Footer: footer with copyright information
  */
 function App() {
+
   return (
     <div className='app-container'>
       <Header />
       <main className='main-content'>
-        <StartSection /> 
-        <PortfolioSection />
-        <AboutSection />
-        <ContactSection />
+        <SharedStateProvider initialValue={{ cardIndex: undefined, isVisible: false }}>
+          <StartSection /> 
+          <PortfolioSection />
+          <AboutSection />
+          <ContactSection />
+        </SharedStateProvider>
       </main>
       <Footer />
     </div>
