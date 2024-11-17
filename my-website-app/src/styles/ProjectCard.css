@@ -83,9 +83,9 @@
     transform: scale(1.1);
 }
 
-.project-card:hover{
-    transform: scale(0.95);
-}
+/* .project-card:hover{
+    transform: scale(0.9);
+} */
 
 @media(min-height: 720px){
     .project-card-content{

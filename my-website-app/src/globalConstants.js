@@ -41,7 +41,7 @@ Diese Projekte haben es mir ermöglicht, ein grundlegendes Verständnis sowohl f
 
 
 // Spezifische Angaben für die Card-Komponenten
-export const CARD_ANIMATION_DURATION = 0.3; // Dauer der Animation in Sekunden
+export const CARD_ANIMATION_DURATION = 0.2; // Dauer der Animation in Sekunden
 export const MAX_NUM_VISIBLE_CARDS = 3;
 
 export const PROJECT_NAME_STRATEGO = 'Stratego-Web';
@@ -49,7 +49,8 @@ export const PROJECT_NAME_ECA = 'Enery Costs Analyzer';
 export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
 
 // Texte für die spezifische Beschreibung der aufgelisteten Projekte
-export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: Onlinespiel`, 
+export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: 
+    Onlinespiel, welches ursprünglich vom Brettspiel "Stratego" abgeleitet wurde.`, 
     `Aufwand: ca. 400 Stunden`, 
     `Learnings: React; NodeJS & ExpressJS; Cypress`]; 
 
@@ -57,7 +58,7 @@ export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: Tool zur Stromkostenanaly
     `Aufwand: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
 
 export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: 
-    Webseite zur Vorstellung der angeeigneten fachlichen Kenntnisse und des beruflichen Werdegangs`, 
+    Webseite zur Vorstellung meines persönlichen und beruflichen Werdegangs.`, 
     `Aufwand: ca. XXX Stunden`, 
     `Learnings: React; CSS; Responsive Design; Vitest`];
 

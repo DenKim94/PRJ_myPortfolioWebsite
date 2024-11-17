@@ -45,7 +45,8 @@ const ProjectCard = ({cardIndex = undefined, projectName, projectURL, projectIma
         variants={cardVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: globalConstants.CARD_ANIMATION_DURATION }}  
+        transition={{ duration: globalConstants.CARD_ANIMATION_DURATION }}
+        whileHover={{ scale: 0.95 }}  
       >
             <a className='project-reference' href={projectURL} target="_blank" rel="noopener noreferrer">
                 <img
