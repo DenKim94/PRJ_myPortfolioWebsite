@@ -1,5 +1,5 @@
 // Globale Konstanten für die Webanwendung
-// Update: 09.11.2024
+// Update: 20.11.2024
 
 // Schwellenwerte für das responsive Design
 export const THRESHOLD_MAX_APP_WIDTH = 800;     
@@ -135,11 +135,12 @@ export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}
 
 // Konstanten für TabsContainer in About-Section
 export const OBSERVER_THRESHOLD_TABS = 0.3;  // Relativer Schwellenwert (Anteil der sichtbaren Seite), um die Animation zu aktivieren
+const PATH_TO_ICONS = 'src/assets/icons/';
 
 export const TAB_INFOS = [
-    { label: 'Berufserfahrung', contentId: 1 },
-    { label: 'Bildungsweg', contentId: 2 },
-    { label: 'Interessen', contentId: 3 },
+    { label: 'Berufsweg', contentId: 1, icon: `${PATH_TO_ICONS}Work_Icon.svg`},
+    { label: 'Bildungsweg', contentId: 2, icon: `${PATH_TO_ICONS}Education_Icon.svg`},
+    { label: 'Lebensweg', contentId: 3, icon: `${PATH_TO_ICONS}Person_Icon.svg`},
 ];
 
 

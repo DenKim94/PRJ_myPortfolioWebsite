@@ -23,7 +23,8 @@ footer {
     margin-right: var(--marginRight-Footer);
 }
 
-@media screen and (max-width: 420px) and (max-height: 820px){
+/* Mobile view: smartphone */
+@media screen and (max-width: 440px) and (max-height: 940px){
     #impressum{
         margin-left: calc(var(--marginLeft-Logo)*0.5);
         font-weight: 300; 

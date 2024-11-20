@@ -91,7 +91,7 @@
 
 
 /* Mobile view: tablet */
-@media(max-width: 820px) and (max-height: 1040px){
+@media(max-width: 1030px) and (max-height: 1370px){
     
     .project-reference img{
         margin: 10px;
@@ -122,17 +122,19 @@
 }
 
 /* Mobile view: smartphone */
-@media screen and (max-width: 420px) and (max-height: 820px){
+@media screen and (max-width: 440px) and (max-height: 940px){
     .project-card{
-        min-width: calc(var(--minAppWidth)*0.5);
-        max-width: calc(var(--minAppWidth)*0.75);
-        min-height: calc(var(--minHeightProjectCard, 50px)*0.7);
+        min-width: calc(var(--minAppWidth)*0.85);
+        max-width: calc(var(--minAppWidth)*0.9);
+        min-height: calc(var(--minHeightProjectCard, 50px)*0.65);
         margin-bottom: 8px;
         max-height: 100%;
     }
 
     .project-reference img{
         margin: 10px;
+        width: 80px;
+        height: 80px;
     }
 
     .project-reference{
@@ -145,7 +147,7 @@
         flex-direction: row;
         position: relative;
         align-items: center; 
-        justify-content: flex-start;
+        justify-content: center;
         margin-right: 0;
         margin-bottom: 0;
     }

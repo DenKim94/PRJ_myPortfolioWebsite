@@ -4,7 +4,7 @@ import { useSharedContext } from './../context/sharedStates';
 import * as globalConstants from './../globalConstants.js';
 
 const TabsContainer = () => {
-    const [activeTab, setActiveTab] = useState('Berufserfahrung');
+    const [activeTab, setActiveTab] = useState(globalConstants.TAB_INFOS[0].label);
     const [isVisible, setIsVisible] = useState(false);
     const sliderRef = useRef(null);
     const { visibleCardInfo } = useSharedContext();
@@ -50,10 +50,16 @@ const TabsContainer = () => {
                 {globalConstants.TAB_INFOS.map((tab) => (
                     <button
                         key={tab.label}
+                        id='about-tab'
                         className={`tab ${activeTab === tab.label ? 'active' : ''}`}
                         onClick={() => setActiveTab(tab.label)}
                     >
-                        {tab.label}
+                        <img
+                            src={tab.icon}
+                            alt={`${tab.label} Icon`}
+                            className="tab-icon"
+                        />
+                        <span className="tab-label">{tab.label}</span>
                     </button>
                 ))}
             </div>

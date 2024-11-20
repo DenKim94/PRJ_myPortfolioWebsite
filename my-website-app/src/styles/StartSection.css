@@ -96,7 +96,7 @@
 }
 
 /* Mobile view: laptop */
-@media(max-width: 1700px) and (max-height: 1050px){
+@media(max-width: 1930px) and (max-height: 1100px){
     .description-text{
         padding-right: 15px;
     }
@@ -104,7 +104,7 @@
 
 
 /* Mobile view: tablet */
-@media screen and (max-width: 820px) and (max-height: 1040px){
+@media(max-width: 1030px) and (max-height: 1370px){
     .start-content-container{
         flex-direction: column;
         justify-content: flex-start;
@@ -144,7 +144,7 @@
 
 
 /* Mobile view: smartphone */
-@media screen and (max-width: 420px) and (max-height: 820px){
+@media screen and (max-width: 440px) and (max-height: 940px){
     .start-content-container{
         flex-direction: column;
         justify-content: flex-start;

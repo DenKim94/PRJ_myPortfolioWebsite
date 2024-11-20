@@ -1,6 +1,5 @@
 import './../styles/AboutSection.css'
 import './TabsContainer.jsx'
-import * as globalConstants from './../globalConstants.js'
 import TabsContainer from './TabsContainer.jsx';
 
 

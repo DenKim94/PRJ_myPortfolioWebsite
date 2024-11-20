@@ -37,21 +37,21 @@
 }
 
 /* Mobile view: laptop */
-@media(max-width: 1400px) and (max-height: 780px){
+@media(max-width: 1930px) and (max-height: 1100px){
     .project-cards-container{
         height: calc(var(--minHeightProjectCard)*1.1*var(--numberVisibleProjectCards));
     }
 }
 
 /* Mobile view: tablet */
-@media(max-width: 820px) and (max-height: 1040px){
+@media(max-width: 1030px) and (max-height: 1370px){
     .project-cards-container{
         height: calc(var(--minHeightProjectCard)*1.1*var(--numberVisibleProjectCards));
     }
 }
 
 /* Mobile view: smartphone */
-@media screen and (max-width: 420px) and (max-height: 820px){
+@media screen and (max-width: 440px) and (max-height: 940px){
     .project-cards-container{
         width: var(--minAppWidth);
         height: var(--minHeightCardContainer);
