@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import './../styles/TabsContainer.css';
 import { useSharedContext } from './../context/sharedStates';
+import EducationContent from './EducationContent.jsx'
+import JobExperienceContent from './JobExperienceContent.jsx'
+import PersonalContent from './PersonalContent.jsx'
 import * as globalConstants from './../globalConstants.js';
 
 const TabsContainer = () => {
@@ -8,6 +11,14 @@ const TabsContainer = () => {
     const [isVisible, setIsVisible] = useState(false);
     const sliderRef = useRef(null);
     const { visibleCardInfo } = useSharedContext();
+
+    let activeTabId = (globalConstants.TAB_INFOS.find((tab) => tab.label === activeTab)?.contentId) || undefined;
+
+    const COMPONENT_MAP = {
+        tab_1: JobExperienceContent,
+        tab_2: EducationContent,
+        tab_3: PersonalContent,
+    };
 
     useEffect(() => {
         if (visibleCardInfo.isVisible === false) {
@@ -40,6 +51,9 @@ const TabsContainer = () => {
         }
     }, [visibleCardInfo.isVisible]);
 
+    // Die aktive Komponente basierend auf der aktiven Tab-ID bestimmen (Null indiziert)
+    const ActiveComponent = Object.values(COMPONENT_MAP)[activeTabId-1];
+
     return (
         <div
             ref={sliderRef}
@@ -64,7 +78,7 @@ const TabsContainer = () => {
                 ))}
             </div>
             <div className="tab-content">
-                {globalConstants.TAB_INFOS.find((tab) => tab.label === activeTab)?.contentId}
+                <ActiveComponent />
             </div>
         </div>
     );
