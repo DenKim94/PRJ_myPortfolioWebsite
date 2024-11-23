@@ -114,11 +114,6 @@ export const PROJECT_CARDS_DATA = [
     },       
 ];    
 
-// Beschreibungs-/Infotexte für die jeweiligen Abschnitte 
-export const INFO_TEXT_ABOUT_SECTION_1 = `Nach dem Studienabschluss in Energietechnik war ich zunächst in der Vorausberechnung von elektrischen Antrieben tätig. 
-Dabei habe ich schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
-Aus Interesse entwickelte sich ein Wunsch nach Veränderung. Daher bin ich seit knapp zwei Jahren als Softwareentwickler tätig. 
-Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`;
 
 // Pfade zu den Bildern für die Diashow (Photoslider)
 const PATH_TO_IMAGES = 'src/assets/images/';
@@ -141,6 +136,46 @@ export const TAB_INFOS = [
     { label: 'Berufsweg', contentId: 1, icon: `${PATH_TO_ICONS}Work_Icon.svg`},
     { label: 'Bildungsweg', contentId: 2, icon: `${PATH_TO_ICONS}Education_Icon.svg`},
     { label: 'Lebensweg', contentId: 3, icon: `${PATH_TO_ICONS}Person_Icon.svg`},
+];
+
+export const INFO_TEXT_JOB_EXPERIENCE = `Nach dem Abschluss meines Studiums war ich zunächst in der Vorausberechnung und Modellierung von elektrischen Antrieben tätig.
+Dabei habe ich recht schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
+Aus Interesse entwickelte sich ein Wunsch nach Veränderung. 
+Daher erfolgte ein Wechsel zu meinem jetzigen Arbeitgeber, wo ich seit knapp zwei Jahren als Softwareentwickler tätig bin. 
+Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`;
+
+
+export const JOB_EXPERIENCE_CONTENT = [
+    {
+        jobTitle: 'Softwareingenieur - Embedded Software',
+        company: 'ITK Engineering GmbH',
+        url: 'https://www.itk-engineering.de/unternehmen/',
+        location: 'Braunschweig',
+        timePeriod: 'Seit 01/2023',
+        duties: ['Modellbasierte Unit-Entwicklung mit SCADE oder SIMULINK nach dem V-Modell', 
+                'Implementierung und Durchführung von Unit-Tests mit Groovy/SPOCK',
+                'Systemanalyse und Ableitung von Anforderungen anhand der VDI-Normen',
+                'Toolentwicklung zur automatisierten Messdatenanalyse mit MATLAB']
+    },
+    {
+        jobTitle: 'Wissenschaftlicher Mitarbeiter',
+        company: 'Institut für Antriebssysteme und Leistungselektronik',
+        url:'https://www.ial.uni-hannover.de/de/',
+        location: 'Hannover',
+        timePeriod: '01/2022 - 12/2022',
+        duties: ['Analyse und Vorausberechnung von Oberschwingungsverlusten in permanentmagneterregten Synchronmaschinen', 
+                'Vorbereitung und Betreuung von studentischen Laborversuchen',
+                'Durchführung von Hörsaalübungen']
+    },
+    {
+        jobTitle: 'Werkstudent - Infotainmentsysteme',
+        company: 'ALTEN Technology GmbH',
+        url: 'https://www.alten-germany.de/ueber-uns/',
+        location: 'Wolfsburg',
+        timePeriod: '04/2021 - 11/2021',
+        duties: ['Testautomatisierung mit Python', 
+                'Durchführung von HiL-Tests an Steuergeräten']
+    },
 ];
 
 

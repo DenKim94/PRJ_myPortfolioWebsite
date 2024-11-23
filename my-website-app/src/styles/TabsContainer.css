@@ -3,8 +3,9 @@
 .tabs-container {
     position: relative;
     max-width: calc(var(--maxWidthSections)*0.9);
-    max-height: var(--maxHeightProjectCard);
+    min-height: var(--minHeightSections);
     min-width: calc(var(--minAppWidth)*0.9);
+    max-height: calc(90vh - var(--minHeightSectionsOffset, 50px));;
     width: 70%;
     margin: auto;
     margin-bottom: 20px;
@@ -18,14 +19,14 @@
 
 .tabs-container.animated {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0); 
 }
 
 .tabs {
     display: flex;
     justify-content: space-between; /* Sorgt für gleichmäßigen Abstand */
     gap: 20px; /* Abstand zwischen Tabs */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 20px;
 }
 
@@ -106,6 +107,11 @@
         min-width: calc(var(--minAppWidth)*0.85);
         max-width: calc(var(--minAppWidth)*0.9);
     }
+
+    .tabs-container.animated{
+        min-height: calc(var(--minHeightSections)*0.85);
+    }
+
 }
 
 /* Mobile view: tablet */
@@ -113,5 +119,4 @@
     .tab-label {
         display: none;
     }
-
 }
