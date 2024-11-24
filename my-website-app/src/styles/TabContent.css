@@ -9,9 +9,9 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    overflow-y: scroll; /* Scrollbar bei Überlauf */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow-y: auto;
 }
 
 .job-list {
@@ -102,7 +102,7 @@
     }
 
     .job-content {
-        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.80); 
+        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.9); 
     }
 }
 

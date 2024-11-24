@@ -5,7 +5,7 @@
     max-width: calc(var(--maxWidthSections)*0.9);
     min-height: var(--minHeightSections);
     min-width: calc(var(--minAppWidth)*0.9);
-    max-height: calc(90vh - var(--minHeightSectionsOffset, 50px));;
+    max-height: calc(90vh - var(--minHeightSectionsOffset, 50px));
     width: 70%;
     margin: auto;
     margin-bottom: 20px;
@@ -90,7 +90,7 @@
     font-family: 'Montserrat', 'Inter', Arial, sans-serif;
     color: #fff;
     height: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tab-label {
@@ -121,6 +121,7 @@
     .tab-label {
         display: none;
     }
+
 }
 
 /* Mobile view: tablet (horizontal) */
