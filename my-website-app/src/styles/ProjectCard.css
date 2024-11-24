@@ -46,7 +46,7 @@
 }
 
 .project-reference img{
-    box-shadow: 1px 1px 15px rgb(200, 199, 199, 0.7);
+    box-shadow: 1px 1px 15px rgb(200, 199, 199, 0.5);
     cursor: pointer;
 }
 
@@ -61,6 +61,7 @@
     align-items: center; 
     justify-content: space-between;
     padding: 5px;
+    cursor: pointer;
 }
 
 .project-card-description{
@@ -81,6 +82,14 @@
 
 .project-reference:hover{
     transform: scale(1.1);
+}
+
+.project-card:hover .project-reference img {
+    box-shadow: 1px 1px 15px rgba(200, 199, 199, 0.9);
+}
+
+.project-reference img:hover{
+    box-shadow: 1px 1px 15px rgb(200, 199, 199, 0.9);
 }
 
 @media(min-height: 720px){

@@ -46,7 +46,7 @@ const ProjectCard = ({cardIndex = undefined, projectName, projectURL, projectIma
         initial="hidden"
         animate="visible"
         transition={{ duration: globalConstants.CARD_ANIMATION_DURATION }}
-        whileHover={{ scale: 0.95 }}  
+        whileHover={{ scale: 0.95 }}  // Zusätzlicher Hover-Effekt
       >
             <a className='project-reference' href={projectURL} target="_blank" rel="noopener noreferrer">
                 <img
@@ -58,7 +58,9 @@ const ProjectCard = ({cardIndex = undefined, projectName, projectURL, projectIma
                     style={{ borderRadius: '15px', marginTop: '0px' }}
                 />
             </a>
-            <div className='project-card-content'>
+            <div className='project-card-content'
+                onClick={() => setVisibleCardInfo({ cardIndex: cardIndex, isVisible: true })} 
+            >
                 <h3 className='project-card-title'>{projectName}</h3>
                 <Button
                     buttonID={`info-button-${projectName}`}

@@ -56,9 +56,13 @@
         width: 70%;
     }
 
+    .info-project-content{
+        margin-bottom: 0;
+    }
+
     #close-button{
         margin: auto;
-        margin-top: 5px;
+        margin-top: 25px;
         margin-bottom: 25px;
     }
 }
@@ -73,13 +77,13 @@
     }
 
     .info-project-content{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     #close-button{
         margin: auto;
         margin-top: 5px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 }
 
@@ -90,9 +94,13 @@
         width: 80%;
     }
 
+    .info-project-content{
+        margin-bottom: 0;
+    }
+
     #close-button{
         margin: auto;
-        margin-top: 5px;
+        margin-top: 25px;
         margin-bottom: 25px;
     }
 }
@@ -108,8 +116,13 @@
         font-size: medium;
     }
 
+    .info-project-content{
+        margin-bottom: 0;
+    }
+
     #close-button{
-        margin-top: 5px;
+        margin: auto;
+        margin-top: 25px;
         margin-bottom: 25px;
     }
 
@@ -126,7 +139,7 @@
     }
 
     .info-project-content{
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     .info-project-demo{
@@ -135,7 +148,7 @@
     }
 
     .generic-button{
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 15px;
     }
 }
