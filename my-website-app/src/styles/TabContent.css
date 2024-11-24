@@ -81,6 +81,7 @@
 @media(max-width: 1930px) and (max-height: 1120px){
     #job-description{
         text-align: justify;
+        margin-bottom: 20px;
     }
     .job-content {
         max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.80); 
