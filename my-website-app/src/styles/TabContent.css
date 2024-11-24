@@ -52,10 +52,11 @@
 
 #job-description {
     display: flex;
+    flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    min-height: 250px;
+    min-height: 200px;
     max-height: 280px;
     margin-bottom: 0;
     max-width: calc(var(--maxWidthSections)*0.8);
@@ -77,9 +78,12 @@
   }
 
 /* Mobile view: laptop */
-@media(max-width: 1930px) and (max-height: 1100px){
+@media(max-width: 1930px) and (max-height: 1120px){
     #job-description{
         text-align: justify;
+    }
+    .job-content {
+        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.80); 
     }
 }
 
@@ -90,7 +94,7 @@
         margin-bottom: 20px;
     }
 }
-
+/* Mobile view: tablet (horizontal) */
 @media(max-width: 1370px) and (max-height: 1030px){
     #job-description  {
         margin-bottom: 20px;
@@ -106,10 +110,14 @@
     #job-description  {
         margin-bottom: 20px;
         text-align: center;
+        justify-content: flex-start;
+        max-height: 350px;
+        height: 340px;
         min-width: calc(var(--minAppWidth)*0.6);
         max-width: calc(var(--maxWidthSections)*0.9);
-        width: 100%;
-        padding-left: 0;
+        width: 92%;
+        margin-top: 0;
+        padding-left: 10px;
         padding-right: 0;
     }
 
@@ -125,18 +133,33 @@
     .job-list {
         min-width: 200px;
         max-width: 400px;
-        width: 400px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
     }
 
     .job-items {
-        width: 100%;
+        width: 92%;
     }
 
     #job-time-period {
-        width: 90%;
+        width: 92%;
         margin-bottom: 0;
     }
+}
+
+/* Mobile view: smartphone (horizontal) */
+@media screen and (max-width: 940px) and (max-height: 440px){
+    .job-content {
+        min-width: calc(var(--minAppWidth)*0.6);
+        max-width: calc(var(--maxWidthSections)*0.8);
+        width: 100%;
+        min-height: calc(var(--minHeightSections)*0.75); 
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
 }

@@ -40,7 +40,7 @@
 }
 
 .generic-button:active {
-    transform: scale(0.95); /* Button leicht nach unten verschieben */
+    transform: scale(0.95);
 }
 
 /* Mobile view: smartphone */
