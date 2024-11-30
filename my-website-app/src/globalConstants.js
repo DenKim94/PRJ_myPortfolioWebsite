@@ -52,16 +52,16 @@ export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
 // Texte für die spezifische Beschreibung der aufgelisteten Projekte
 export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: 
     Onlinespiel, welches ursprünglich vom Brettspiel "Stratego" abgeleitet wurde.`, 
-    `Aufwand: ca. 400 Stunden`, 
-    `Learnings: React; NodeJS & ExpressJS; Cypress`]; 
+    `Umfang: ca. 400 Stunden`, 
+    `Learnings: React; NodeJS & ExpressJS; Cypress; CSS`]; 
 
 export const PROJECT_DESCRIPTION_ECA = [`Beschreibung: Tool zur Stromkostenanalyse`, 
-    `Aufwand: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
+    `Umfang: ca. 55 Stunden`, `Learnings: Python; SQLite; CustomTkinter`];
 
 export const PROJECT_DESCRIPTION_WEBSITE= [`Beschreibung: 
-    Webseite zur Vorstellung meines persönlichen und beruflichen Werdegangs.`, 
-    `Aufwand: ca. XXX Stunden`, 
-    `Learnings: React; CSS; Responsive Design; Vitest`];
+    Eigene Webseite zur Vorstellung meiner Projekte und meines persönlichen sowie beruflichen Werdegangs.`, 
+    `Umfang: ca. XXX Stunden`, 
+    `Learnings: React; HTML; CSS; Responsive Design; Vitest`];
 
 // URLs zu den Webseiten der Projekte
 export const PROJECT_URLS = {
@@ -141,13 +141,13 @@ export const TAB_INFOS = [
 export const INFO_TEXT_JOB_EXPERIENCE = `Nach dem Abschluss meines Studiums war ich zunächst in der Vorausberechnung und Modellierung von elektrischen Antrieben tätig.
 Dabei habe ich recht schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
 Aus Interesse entwickelte sich ein Wunsch nach Veränderung. 
-Daher erfolgte ein Wechsel zu meinem jetzigen Arbeitgeber, wo ich seit knapp zwei Jahren als Softwareentwickler tätig bin. 
+Daher erfolgte ein Wechsel zu meinem jetzigen Arbeitgeber, bei dem ich seit über zwei Jahren als Softwareentwickler tätig bin. 
 Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`;
 
 
 export const JOB_EXPERIENCE_CONTENT = [
     {
-        jobTitle: 'Softwareingenieur - Embedded Software',
+        jobTitle: 'Softwareingenieur - Embedded Systems',
         company: 'ITK Engineering GmbH',
         url: 'https://www.itk-engineering.de/unternehmen/',
         location: 'Braunschweig',
@@ -174,10 +174,65 @@ export const JOB_EXPERIENCE_CONTENT = [
         location: 'Wolfsburg',
         timePeriod: '04/2021 - 11/2021',
         duties: ['Testautomatisierung mit Python', 
-                'Durchführung von HiL-Tests an Steuergeräten']
+                'Durchführung von HiL-Tests']
     },
 ];
 
+export const INFO_TEXT_EDUCATION = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+Mauris vehicula risus at arcu.`;
 
+
+export const EDUCATION_CONTENT = [
+
+    {
+        institution: 'Leibniz Universität Hannover',
+        description: 'Masterstudium',
+        timePeriod: '05/2019 - 12/2021',
+        duties:['Vertiefung: Elektrische Antriebssysteme', 'Bewertung der Abschlussarbeit: 1.0', 'Abschlussnote: 1.7']
+    },
+
+    {
+        institution: 'Leibniz Universität Hannover',
+        description: 'Bachelorstudium',
+        timePeriod: '10/2014 - 05/2019',
+        duties:['Fachrichtung: Energietechnik', 'Bewertung der Abschlussarbeit: 1.0', 'Abschlussnote: 2.8']
+    },
+
+    {
+        institution: 'Internatsgymnasium Bad Bederkesa',
+        description: 'Abitur',
+        timePeriod: '07/2014',
+        duties:['Abschlussnote: 3.1']
+    }
+]
+
+export const INFO_TEXT_PERSONAL = `Mein Weg in Deutschland begann im Jahr 2006. Als 11-jähriger Junge kam ich zusammen mit meiner Mutter aus Taschkent, der Hauptstadt Usbekistans, nach Deutschland. 
+Unsere Reise führte uns in eine kleine Ortschaft namens Bad Bederkesa.
+Der Gedanke an ein neues Leben in einem fremden Land und weit weg vom Rest der Familie erfüllte mich einerseits mit Angst, andererseits aber auch mit Aufregung und Neugier. 
+Ich setzte meine Schullaufbahn mit überschaubaren Deutschkenntnissen fort und begann meine akademische Reise an einer Hauptschule.
+Die anfänglichen Herausforderungen waren deutlich spürbar, doch mein Ehrgeiz trieb mich voran.
+Ich arbeitete fleißig daran, die Sprache zu erlernen und mich an die neue Umgebung und Kultur anzupassen. 
+Schließlich schloss ich im Jahr 2014 meine Schulausbildung mit dem Abitur ab.
+
+Ohne einer klaren Vorstellung von meiner Zukunft zog ich für mein Studium nach Hannover.
+Die Stadt empfing mich mit offenen Armen und ich tauchte in eine Lebensphase voller neuer Erfahrungen und Freundschaften ein. 
+Der Beginn meines Ingenieursstudiums erwies sich jedoch turbulenter als erwartet.
+Die Prüfungen waren herausfordernder, als ich es mir vorgestellt hatte, was zu mehr Tiefen als Höhen führte. Aber ich ließ mich nicht entmutigen.
+Diese schwierige Zeit zwang mich, mich selbst zu reflektieren, Entscheidungen zu treffen und meine Komfortzone zu verlassen. 
+Ich nutzte diese Phase, um mich persönlich und fachlich weiterzuentwickeln. 
+Schließlich schloss ich das Studium erfolgreich mit dem Masterabschluss ab.
+
+Während meines Studiums hatte ich die Möglichkeit, in verschiedenen Bereichen zu arbeiten und wertvolle Erfahrungen zu sammeln.
+Ich begann als Kellner und Aufbauhelfer bei Großveranstaltungen, arbeitete als Promoter für den Naturschutzbund, war Fließbandarbeiter bei einem renommierten Automobilhersteller, 
+unterstütze als studentische Hilfskraft in der Forschung oder war als Werkstudent im Bereich der Testautomatisierung tätig.
+
+Rückblickend bin ich sehr dankbar für diese Erfahrungen, die mich geprägt und meinen Blick auf die Welt erweitert haben.
+Heute bin ich stolz darauf, mich Ingenieur nennen zu dürfen, der danach strebt den Alltag der Menschen durch das Lösen technischer Fragestellungen zu vereinfachen. 
+Jeder Schritt, den ich gegangen bin, hat mich geformt und mich auf dieser spannenden Reise zu dem fleißigen, organisierten und zuverlässigen Menschen gemacht, der ich heute bin.
+Ich blicke optimistisch in die Zukunft, bereit, neue Herausforderungen anzunehmen und weiterhin zu wachsen.`;
 
 

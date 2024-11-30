@@ -6,6 +6,7 @@
     min-height: var(--minHeightSections);
     min-width: calc(var(--minAppWidth)*0.9);
     max-height: calc(90vh - var(--minHeightSectionsOffset, 50px));
+    height: calc(90vh - var(--minHeightSectionsOffset, 50px));
     width: 70%;
     margin: auto;
     margin-bottom: 20px;

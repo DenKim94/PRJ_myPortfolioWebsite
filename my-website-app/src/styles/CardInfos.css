@@ -39,6 +39,11 @@
 #info-project-name{
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#info-project-name:hover{
+    transform: scale(1.1);
 }
 
 #info-project-description{

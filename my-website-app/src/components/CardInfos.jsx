@@ -37,7 +37,16 @@ const CardInfos = () => {
             variants={slideAnimation}
             transition={{ duration: globalConstants.CARDINFO_ANIMATION_DURATION }}
         >
-            <h2 id='info-project-name'>{projInfo?.projectName}</h2>
+            <h2 id="info-project-name">
+                <a  href={projInfo?.projectURL} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    id='info-project-title'
+                    style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}
+                >
+                    {projInfo?.projectName}
+                </a>
+            </h2>
             <div className='info-project-content'>
                 <ul id='info-project-description'>
                     {projInfo?.projectDescription.map((item, index) => (
