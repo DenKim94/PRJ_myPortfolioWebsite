@@ -154,9 +154,9 @@ export const JOB_EXPERIENCE_CONTENT = [
         url: 'https://www.itk-engineering.de/unternehmen/',
         location: 'Braunschweig',
         timePeriod: 'Seit 01/2023',
-        duties: ['Modellbasierte Unit-Entwicklung mit SCADE oder SIMULINK nach dem V-Modell', 
-                'Implementierung und Durchführung von Unit-Tests mit Groovy/SPOCK',
-                'Systemanalyse und Ableitung von Anforderungen anhand der VDI-Normen',
+        duties: ['Modellbasierte Unit-Entwicklung mit SCADE oder SIMULINK nach ASIL-B', 
+                'Implementierung und Durchführung von Unit-Tests mit Groovy (SPOCK)',
+                'Systemanalyse und Ableitung von Anforderungen',
                 'Toolentwicklung zur automatisierten Messdatenanalyse mit MATLAB']
     },
     {
@@ -213,7 +213,7 @@ export const EDUCATION_CONTENT = [
 ]
 
 export const INFO_TEXT_PERSONAL = `Mein Weg in Deutschland begann im Jahr 2006. Als 11-jähriger Junge kam ich zusammen mit meiner Mutter aus Taschkent, der Hauptstadt Usbekistans, nach Deutschland. 
-Unsere Reise führte uns in eine kleine Ortschaft namens Bad Bederkesa.
+Unsere Reise führte uns zu einem kleinen Kurort namens Bad Bederkesa.
 Der Gedanke an ein neues Leben in einem fremden Land und weit weg vom Rest der Familie erfüllte mich einerseits mit Angst, andererseits aber auch mit Aufregung und Neugier. 
 Ich setzte meine Schullaufbahn mit überschaubaren Deutschkenntnissen fort und begann meine akademische Reise an einer Hauptschule.
 Die anfänglichen Herausforderungen waren deutlich spürbar, doch mein Ehrgeiz trieb mich voran.
@@ -221,7 +221,7 @@ Ich arbeitete fleißig daran, die Sprache zu erlernen und mich an die neue Umgeb
 Schließlich schloss ich im Jahr 2014 meine Schulausbildung mit dem Abitur ab.
 
 Ohne einer klaren Vorstellung von meiner Zukunft zog ich für mein Studium nach Hannover.
-Die Stadt empfing mich mit offenen Armen und ich tauchte in eine Lebensphase voller neuer Erfahrungen und Freundschaften ein. 
+Die Stadt empfing mich mit offenen Armen und ich tauchte in eine Lebensphase voller neuer Erfahrungen und Begegnungen ein. 
 Der Beginn meines Ingenieursstudiums erwies sich jedoch turbulenter als erwartet.
 Die Prüfungen waren herausfordernder, als ich es mir vorgestellt hatte, was zu mehr Tiefen als Höhen führte. Aber ich ließ mich nicht entmutigen.
 Diese schwierige Zeit zwang mich, mich selbst zu reflektieren, Entscheidungen zu treffen und meine Komfortzone zu verlassen. 
@@ -233,7 +233,7 @@ Ich begann als Kellner und Aufbauhelfer bei Großveranstaltungen, arbeitete als 
 unterstütze als studentische Hilfskraft in der Forschung oder war als Werkstudent im Bereich der Testautomatisierung tätig.
 
 Rückblickend bin ich sehr dankbar für diese Erfahrungen, die mich geprägt und meinen Blick auf die Welt erweitert haben.
-Heute bin ich stolz darauf, mich Ingenieur nennen zu dürfen, der danach strebt den Alltag der Menschen durch das Lösen technischer Fragestellungen zu vereinfachen. 
+Heute bin ich stolz darauf, mich Ingenieur nennen zu dürfen, der danach strebt den Alltag der Menschen mit smarten Softwarelösungen zu vereinfachen. 
 Jeder Schritt, den ich gegangen bin, hat mich geformt und mich auf dieser spannenden Reise zu dem fleißigen, organisierten und zuverlässigen Menschen gemacht, der ich heute bin.
 Ich blicke optimistisch in die Zukunft, bereit, neue Herausforderungen anzunehmen und weiterhin zu wachsen.`;
 
