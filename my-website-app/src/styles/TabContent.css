@@ -71,17 +71,18 @@
 #company-name {
     text-decoration: none;
     color: white; 
-  }
+}
 
-  #company-name:hover {
+#company-name:hover {
     text-decoration: underline;
-  }
+}
 
-  .personal-content {
+.personal-content {
     display: flex;
-    flex-direction: row; /* Standardanordnung */
-    gap: 25px; /* Abstand zwischen Text und Slider */
-    position: relative;
+    flex-direction: row;
+    gap: 25px; 
+    overflow-y: auto;
+    height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.95); 
 }
 
 .personal-photo-slider {
@@ -90,14 +91,13 @@
     margin-left: 25px;
 }
 
-
 #personal-description{
     display: flex;
-    flex-direction: block;
+    flex-direction: column;
     font-family: 'Montserrat', 'Inter', Arial, sans-serif;
     text-align: left;
-    max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.82); 
     min-width: calc(var(--minAppWidth)*0.9);
+    font-size: medium;
     width: 95%;
     overflow-y: auto;
     justify-content: flex-start;
@@ -114,9 +114,19 @@
         text-align: justify;
         margin-bottom: 20px;
     }
+
     .job-content {
         max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.80); 
     }
+
+    #personal-description{
+        margin-left: 0px;
+    }
+
+    .personal-content {
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.8); 
+    }
+
 }
 
 /* Mobile view: tablet */
@@ -130,7 +140,36 @@
     .job-content {
         max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.86); 
     }
+
+    .personal-content {
+        flex-direction: column;
+    }
+
+    .personal-photo-slider {
+        justify-content: center;
+        margin: auto;
+    }
+
+    #personal-description{
+        margin-left: 20px;
+    }
+
+    .personal-content {
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.88); 
+    }
 }
+
+@media(max-width: 1000px) and (max-height: 1200px){
+    #personal-description{
+        margin-left: 15px;
+        padding-right: 0;
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.51); 
+    }
+    .personal-content {
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.86); 
+    }
+}
+
 /* Mobile view: tablet (horizontal) */
 @media(max-width: 1370px) and (max-height: 1030px){
     #job-description  {
@@ -139,6 +178,32 @@
 
     .job-content {
         max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.82); 
+    }
+
+    #personal-description{
+        margin-left: 15px;
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.83); 
+    }
+
+    .personal-content {
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.86); 
+    }
+}
+
+/* Mobile view: tablet (horizontal) */
+@media(max-width: 1080px) and (max-height: 820px){
+    #personal-description{
+        margin-left: 20px;
+    }
+
+    .personal-photo-slider {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .personal-content {
+        flex-direction: column;
+        height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.85); 
     }
 }
 
@@ -186,6 +251,7 @@
         width: 92%;
         margin-bottom: 0;
     }
+
 }
 
 /* Mobile view: smartphone (horizontal) */

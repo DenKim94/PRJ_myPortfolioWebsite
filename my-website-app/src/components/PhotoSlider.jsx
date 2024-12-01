@@ -19,7 +19,7 @@ import * as globalConstants from './../globalConstants.js'
  * (which is determined by the 'currentIndex' state variable) to create the
  * animation effect.
  */
-const PhotoSlider = ({ fullPhotoPath }) => {
+const PhotoSlider = ({ fullPhotoPath, size_px = globalConstants.PHOTO_SIZE_DEFAULT_PX}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isInView, setIsInView] = useState(false); // Status, ob die Komponente im sichtbaren Bereich ist
     const [isForward, setIsForward] = useState(true); // Status für die Richtung der Diashow
@@ -79,6 +79,7 @@ const PhotoSlider = ({ fullPhotoPath }) => {
           style={{
             '--border-color': globalConstants.PHOTO_BORDER_COLOR,
             '--border-width': globalConstants.PHOTO_BORDER_WIDTH,
+            '--photoFrameSize': size_px
           }}
         >
         <div
@@ -90,7 +91,7 @@ const PhotoSlider = ({ fullPhotoPath }) => {
                 className="slide"
                 key={index}
                 style={{ backgroundImage: `url(${imagePath})` }}
-          />
+            />
           ))}
         </div>
       </div>
@@ -99,6 +100,7 @@ const PhotoSlider = ({ fullPhotoPath }) => {
 
 PhotoSlider.propTypes = {
     fullPhotoPath: PropTypes.arrayOf(PropTypes.string),
+    size_px: PropTypes.string
   };
 
 export default PhotoSlider;

@@ -121,10 +121,12 @@ const IMAGE_NAMES = ['IMG_2710.png', 'IMG_4041.png',
                     'IMG_2610.png', 'IMG_2716.png',
                     'IMG_4461.png', 'IMG_4481.png'];
 
-export const DURATION_IMAGE_ANIMATION = 3200;       // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
+export const DURATION_IMAGE_ANIMATION = 3500;       // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
 export const PHOTO_BORDER_COLOR = 'black';
 export const PHOTO_BORDER_WIDTH = '10px';
 export const OBSERVER_THRESHOLD_PHOTOSLIDER = 0.1;  // Relativer Schwellenwert (Anteil der sichtbaren Seite), um die Animation zu aktivieren
+export const PHOTO_SIZE_DEFAULT_PX = '360px';
+export const PHOTO_SIZE_PERSONAL_PX = '280px';
 
 export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}`);
 

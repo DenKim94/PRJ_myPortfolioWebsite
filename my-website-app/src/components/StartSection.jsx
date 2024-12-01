@@ -20,7 +20,7 @@ function StartSection() {
                 <p className="description-text">
                     {globalConstants.INFO_TEXT_START_SECTION}
                 </p>  
-                <PhotoSlider fullPhotoPath = {globalConstants.fullPhotoPath} />
+                <PhotoSlider fullPhotoPath = {globalConstants.fullPhotoPath} size_px={globalConstants.PHOTO_SIZE_DEFAULT_PX} />
             </div>
         </section>
     );
