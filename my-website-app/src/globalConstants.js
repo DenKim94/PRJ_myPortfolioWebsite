@@ -51,7 +51,7 @@ export const PROJECT_NAME_WEBSITE = 'Portfolio Website';
 
 // Texte für die spezifische Beschreibung der aufgelisteten Projekte
 export const PROJECT_DESCRIPTION_STRATEGO = [`Beschreibung: 
-    Onlinespiel, welches ursprünglich vom Brettspiel "Stratego" abgeleitet wurde.`, 
+    Onlinespiel (Desktop), welches ursprünglich vom Brettspiel "Stratego" abgeleitet wurde.`, 
     `Umfang: ca. 400 Stunden`, 
     `Learnings: React; NodeJS & ExpressJS; Cypress; CSS`]; 
 
