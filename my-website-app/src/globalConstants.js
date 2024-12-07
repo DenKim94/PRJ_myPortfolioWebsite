@@ -29,10 +29,10 @@ export const SCROLL_THRESHOLD_HIGH    = 1700;
 
 // Text in der Info-Box auf der Startseite
 export const INFO_TEXT_START_SECTION = `Willkommen auf meiner Webseite!
-Hier wirst du meinen bisherigen persönlichen und beruflichen Werdegang kennenlernen. 
+Hier wirst du meinen persönlichen und beruflichen Werdegang kennenlernen. 
 Zudem stelle ich dir meine Softwareprojekte vor, die ich bisher in meiner Freizeit entwickelt habe.
 
-Bei Fragen, Feedback oder Anfragen zum Lebenslauf freue ich mich über deine E-Mail.`;
+Für Feedback, Rückfragen oder Anfragen zu meinem Lebenslauf freue ich mich auf deine E-Mail.`;
 
 // Text für die allgemeine Beschreibung der Projektseite
 export const GENERAL_PROJECT_DESCRIPTION = `Im Rahmen meiner fachlichen und persönlichen Weiterbildung habe ich in meiner Freizeit eine Reihe von Webentwicklungsprojekten umgesetzt, 
@@ -117,9 +117,9 @@ export const PROJECT_CARDS_DATA = [
 
 // Pfade zu den Bildern für die Diashow (Photoslider)
 const PATH_TO_IMAGES = 'src/assets/images/';
-const IMAGE_NAMES = ['IMG_2710.png', 'IMG_4041.png', 
-                    'IMG_2610.png', 'IMG_2716.png',
-                    'IMG_4461.png', 'IMG_4481.png'];
+const IMAGE_NAMES = ['IMG_0292.png', 'IMG_4461.png', 
+                     'IMG_2716.png', 'IMG_2610.png',
+                     'IMG_4481.png'];
 
 export const DURATION_IMAGE_ANIMATION = 3500;       // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
 export const PHOTO_BORDER_COLOR = 'black';
@@ -140,10 +140,10 @@ export const TAB_INFOS = [
     { label: 'Lebensweg', contentId: 3, icon: `${PATH_TO_ICONS}Person_Icon.svg`},
 ];
 
-export const INFO_TEXT_JOB_EXPERIENCE = `Nach dem Abschluss meines Studiums war ich zunächst in der Vorausberechnung und Modellierung von elektrischen Antrieben tätig.
+export const INFO_TEXT_JOB_EXPERIENCE = `Nach dem Abschluss meines Studiums war ich zunächst als wissenschaftlicher Mitarbeiter in der Vorausberechnung von elektrischen Antrieben tätig.
 Dabei habe ich recht schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
 Aus Interesse entwickelte sich ein Wunsch nach Veränderung. 
-Daher erfolgte ein Wechsel zu meinem jetzigen Arbeitgeber, bei dem ich seit über zwei Jahren als Softwareentwickler tätig bin. 
+Daher entschied ich mich für einen Wechsel in die Industrie, wo ich nun seit über zwei Jahren erfolgreich als Softwareingenieur tätig bin.
 Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`;
 
 
@@ -180,13 +180,6 @@ export const JOB_EXPERIENCE_CONTENT = [
     },
 ];
 
-export const INFO_TEXT_EDUCATION = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-Mauris vehicula risus at arcu.`;
-
 
 export const EDUCATION_CONTENT = [
 
@@ -207,14 +200,28 @@ export const EDUCATION_CONTENT = [
     {
         institution: 'Internatsgymnasium Bad Bederkesa',
         description: 'Abitur',
-        timePeriod: '07/2014',
+        timePeriod: '08/2007 - 07/2014',
         duties:['Abschlussnote: 3.1']
-    }
+    },
+
+    {
+        institution: 'Schulzentrum Bad Bederkesa',
+        description: 'Hauptschulzweig',
+        timePeriod: '10/2006 - 07/2007',
+        duties:['Einstieg in der 5. Klasse']
+    },
+
+    {
+        institution: 'Gesamtschule Nr. 291 Tashkent',
+        description: 'Grundschule (Usbekistan)',
+        timePeriod: '08/2001 - 08/2006',
+        duties:[ ]
+    },
 ]
 
 export const INFO_TEXT_PERSONAL = `Mein Weg in Deutschland begann im Jahr 2006. Als 11-jähriger Junge kam ich zusammen mit meiner Mutter aus Taschkent, der Hauptstadt Usbekistans, nach Deutschland. 
-Unsere Reise führte uns zu einem kleinen Kurort namens Bad Bederkesa.
-Der Gedanke an ein neues Leben in einem fremden Land und weit weg vom Rest der Familie erfüllte mich einerseits mit Angst, andererseits aber auch mit Aufregung und Neugier. 
+Unsere Reise führte uns zunächst zu einem kleinen Kurort namens Bad Bederkesa.
+Der Gedanke an ein neues Leben in einem fremden Land weit weg vom Rest der Familie erfüllte mich einerseits mit Angst, andererseits aber auch mit Aufregung und Neugier. 
 Ich setzte meine Schullaufbahn mit überschaubaren Deutschkenntnissen fort und begann meine akademische Reise an einer Hauptschule.
 Die anfänglichen Herausforderungen waren deutlich spürbar, doch mein Ehrgeiz trieb mich voran.
 Ich arbeitete fleißig daran, die Sprache zu erlernen und mich an die neue Umgebung und Kultur anzupassen. 
@@ -233,7 +240,7 @@ Ich begann als Kellner und Aufbauhelfer bei Großveranstaltungen, arbeitete als 
 unterstütze als studentische Hilfskraft in der Forschung oder war als Werkstudent im Bereich der Testautomatisierung tätig.
 
 Rückblickend bin ich sehr dankbar für diese Erfahrungen, die mich geprägt und meinen Blick auf die Welt erweitert haben.
-Heute bin ich stolz darauf, mich Ingenieur nennen zu dürfen, der danach strebt den Alltag der Menschen mit smarten Softwarelösungen zu vereinfachen. 
+Heute bin ich stolz darauf, mich Ingenieur nennen zu dürfen, der danach strebt den Alltag der Menschen mit zuverlässiger und nutzerfreundlicher Software zu vereinfachen. 
 Jeder Schritt, den ich gegangen bin, hat mich geformt und mich auf dieser spannenden Reise zu dem fleißigen, organisierten und zuverlässigen Menschen gemacht, der ich heute bin.
 Ich blicke optimistisch in die Zukunft, bereit, neue Herausforderungen anzunehmen und weiterhin zu wachsen.`;
 

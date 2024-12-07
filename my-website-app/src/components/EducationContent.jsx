@@ -4,9 +4,6 @@ import * as globalConstants from './../globalConstants.js';
 const EducationContent = () => {
     return ( 
         <div className='job-content'>
-            <p id="job-description">
-                {globalConstants.INFO_TEXT_EDUCATION}
-            </p>
             {globalConstants.EDUCATION_CONTENT.map((obj, obj_index) => (
                 <div className='job-list' key={obj_index}>
                     <h5 id='job-time-period'>{obj.timePeriod}</h5>

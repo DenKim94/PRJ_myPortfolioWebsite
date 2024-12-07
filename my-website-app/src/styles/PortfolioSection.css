@@ -49,6 +49,10 @@
     .project-cards-container{
         height: calc(var(--minHeightProjectCard)*1.1*var(--numberVisibleProjectCards));
     }
+
+    .general-project-description{
+        max-height: 320px;
+    }
 }
 
 /* Mobile view: tablet (horizontal) */
@@ -72,9 +76,9 @@
         font-size: medium;
         margin-right: 10px;
         margin-left: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         padding: 5px;
-        max-height: 165px;
+        max-height: 280px;
     }
 
     #portfolio-title{
