@@ -76,7 +76,7 @@
     }
 
     .education-content {
-        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.83); 
+        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.86); 
     }
 }
 
