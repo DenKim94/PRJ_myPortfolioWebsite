@@ -1,5 +1,5 @@
-// Globale Konstanten für die Webanwendung
-// Update: 20.11.2024
+// Globale Konstanten für die Webanwendung [ERFORDERLICH]
+// Update: 08.12.2024
 
 // Schwellenwerte für das responsive Design
 export const THRESHOLD_MAX_APP_WIDTH = 800;     
@@ -117,18 +117,30 @@ export const PROJECT_CARDS_DATA = [
 
 // Pfade zu den Bildern für die Diashow (Photoslider)
 const PATH_TO_IMAGES = 'src/assets/images/';
-const IMAGE_NAMES = ['IMG_0298.png', 'IMG_4461.png', 
-                     'IMG_2716.png', 'IMG_2610.png',
-                     'IMG_4481.png'];
+const IMAGE_NAMES_SLIDER = ['IMG_0298.png', 'IMG_4461.png', 
+                            'IMG_2716.png', 'IMG_2610.png',
+                            'IMG_4481.png'];
 
 export const DURATION_IMAGE_ANIMATION = 3500;       // Dauer des Intervalls für einen Fotowechsel in Millisekunden 
 export const PHOTO_BORDER_COLOR = 'black';
 export const PHOTO_BORDER_WIDTH = '10px';
 export const OBSERVER_THRESHOLD_PHOTOSLIDER = 0.1;  // Relativer Schwellenwert (Anteil der sichtbaren Seite), um die Animation zu aktivieren
 export const PHOTO_SIZE_DEFAULT_PX = '360px';
-export const PHOTO_SIZE_PERSONAL_PX = '280px';
 
-export const fullPhotoPath = IMAGE_NAMES.map((name) => `${PATH_TO_IMAGES}${name}`);
+export const fullPhotoPath_slider = IMAGE_NAMES_SLIDER.map((name) => `${PATH_TO_IMAGES}${name}`);
+
+
+// Pfade zu den Bildern für den Foto-Switcher
+export const PHOTO_SIZE_SWITCHER_PX = '280px';
+export const PHOTO_BORDER_COLOR_SWITCHER = 'white';
+export const PHOTO_BORDER_WIDTH_SWITCHER = '2px';
+
+const IMAGE_NAMES_SWITCHER = ['IMG_0297.png', 'IMG_4380.png', 
+                              'IMG_0724.png', 'IMG_0038.png',
+                              'IMG_0812.png'];
+
+export const fullPhotoPath_switcher = IMAGE_NAMES_SWITCHER.map((name) => `${PATH_TO_IMAGES}${name}`);
+
 
 // Konstanten für TabsContainer in About-Section
 export const OBSERVER_THRESHOLD_TABS = 0.3;  // Relativer Schwellenwert (Anteil der sichtbaren Seite), um die Animation zu aktivieren
@@ -140,6 +152,11 @@ export const TAB_INFOS = [
     { label: 'Lebensweg', contentId: 3, icon: `${PATH_TO_ICONS}Person_Icon.svg`},
 ];
 
+export const ICON_PATHS_PHOTO_SWITCHER = { left:`${PATH_TO_ICONS}arrowLeft_Icon.svg`, 
+                                           right:`${PATH_TO_ICONS}arrowRight_Icon.svg`};
+
+
+// Abschnitt Berufsweg
 export const INFO_TEXT_JOB_EXPERIENCE = `Nach dem Abschluss meines Studiums war ich zunächst als wissenschaftlicher Mitarbeiter in der Vorausberechnung von elektrischen Antrieben tätig.
 Dabei habe ich recht schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
 Aus Interesse entwickelte sich ein Wunsch nach Veränderung. 
@@ -180,7 +197,7 @@ export const JOB_EXPERIENCE_CONTENT = [
     },
 ];
 
-
+// Abschnitt Bildungsweg
 export const EDUCATION_CONTENT = [
 
     {
@@ -219,6 +236,7 @@ export const EDUCATION_CONTENT = [
     },
 ]
 
+// Abschnitt Lebensweg
 export const INFO_TEXT_PERSONAL = `Mein Weg in Deutschland begann im Jahr 2006. Als 11-jähriger Junge kam ich zusammen mit meiner Mutter aus Taschkent, der Hauptstadt Usbekistans, nach Deutschland. 
 Unsere Reise führte uns zunächst zu einem kleinen Kurort namens Bad Bederkesa.
 Der Gedanke an ein neues Leben in einem fremden Land weit weg vom Rest der Familie erfüllte mich einerseits mit Angst, andererseits aber auch mit Aufregung und Neugier. 
