@@ -30,7 +30,7 @@ export const SCROLL_THRESHOLD_HIGH    = 1700;
 // Text in der Info-Box auf der Startseite
 export const INFO_TEXT_START_SECTION = `Willkommen auf meiner Webseite!
 Hier wirst du meinen persönlichen und beruflichen Werdegang kennenlernen. 
-Zudem stelle ich dir meine Softwareprojekte vor, die ich bisher in meiner Freizeit entwickelt habe.
+Zudem stelle ich dir meine Softwareprojekte vor, die ich bisher in meiner Freizeit bearbeitet habe.
 
 Für Feedback, Rückfragen oder Anfragen zu meinem Lebenslauf freue ich mich auf deine E-Mail.`;
 

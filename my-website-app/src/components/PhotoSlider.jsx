@@ -1,5 +1,5 @@
 import './../styles/SectionsGeneric.css'
-import './../styles/StartSection.css'
+import './../styles/PhotoSlider.css'
 import PropTypes from 'prop-types';
 import { useState, useEffect, useRef } from 'react';
 import * as globalConstants from './../globalConstants.js'
