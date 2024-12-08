@@ -1,4 +1,4 @@
-import './../styles/TabContent.css';
+import './../styles/JobContent.css';
 import * as globalConstants from './../globalConstants.js';
 
 const JobExperienceContent = () => {

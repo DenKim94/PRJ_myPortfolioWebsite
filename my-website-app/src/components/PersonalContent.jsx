@@ -1,4 +1,4 @@
-import './../styles/TabContent.css';
+import './../styles/PersonalContent.css';
 import PhotoSlider from './PhotoSlider.jsx';
 import * as globalConstants from './../globalConstants.js';
 

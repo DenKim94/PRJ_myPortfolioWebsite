@@ -117,7 +117,7 @@ export const PROJECT_CARDS_DATA = [
 
 // Pfade zu den Bildern für die Diashow (Photoslider)
 const PATH_TO_IMAGES = 'src/assets/images/';
-const IMAGE_NAMES = ['IMG_0292.png', 'IMG_4461.png', 
+const IMAGE_NAMES = ['IMG_0298.png', 'IMG_4461.png', 
                      'IMG_2716.png', 'IMG_2610.png',
                      'IMG_4481.png'];
 
