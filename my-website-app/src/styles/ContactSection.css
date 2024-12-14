@@ -1,5 +1,11 @@
 @import url('index.css');
 
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #contact-title{
     display: flex;
     flex-direction: row;
@@ -7,4 +13,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    width: 100%;
+}
+
+#contact-text{
+    max-width: calc(var(--maxWidthSections)*0.9);
+    min-width: calc(var(--minAppWidth)*0.9);
+    width: 70%;
 }

@@ -1,5 +1,5 @@
 // Globale Konstanten für die Webanwendung [ERFORDERLICH]
-// Update: 08.12.2024
+// Update: 14.12.2024
 
 // Schwellenwerte für das responsive Design
 export const THRESHOLD_MAX_APP_WIDTH = 800;     
@@ -263,3 +263,7 @@ Jeder Schritt, den ich gegangen bin, hat mich geformt und mich auf dieser spanne
 Ich blicke optimistisch in die Zukunft, bereit, neue Herausforderungen anzunehmen und weiterhin zu wachsen.`;
 
 
+// Abschnitt Kontakt
+export const INFO_TEXT_CONTACT = ` Don'tbe so shy! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+At vero eos et accusam et justo duo dolores et ea rebum.`;
