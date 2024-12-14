@@ -135,8 +135,8 @@
         min-width: calc(var(--minAppWidth)*0.6);
         max-width: calc(var(--maxWidthSections)*0.8);
         width: 100%;
-        min-height: calc(var(--minHeightSections)*0.65); 
-        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.82); 
+        min-height: calc(var(--minHeightSections)*0.68); 
+        max-height: calc((90vh - var(--minHeightSectionsOffset, 50px))*0.84); 
         justify-content: flex-start;
         align-items: flex-start;
     }
