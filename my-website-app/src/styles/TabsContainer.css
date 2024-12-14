@@ -128,7 +128,7 @@
 @media(max-width: 1370px) and (max-height: 1030px){
     .tabs {
         gap: 15px; 
-        margin-bottom: 10px;
+        margin-bottom: 0;
         padding: 20px;
     }
 

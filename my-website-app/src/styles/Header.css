@@ -21,12 +21,12 @@
     font-size: 30px;
     margin-left: var(--marginLeft-Logo); 
     font-weight: bold;
-    transition: filter 300ms ease; 
+    transition: filter 200ms ease; 
 }
 
 .my-logo:hover{
     cursor: default;
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
+    filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.8)); 
 }
 
 nav {
@@ -34,7 +34,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 0;
 }
 
@@ -42,39 +42,49 @@ nav {
     list-style: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    padding: 0;
+    transition: filter 200ms ease; 
 }
 
 .navigation-elements li{
     text-align: center;
+    padding: 2px;
 }
 
-.navigation-elements a {
+.navigation-elements a{
     color: white;
     text-decoration: none;
-    font-weight: 500; 
-    transition: filter 300ms ease; 
-    margin-right: 40px;
-    padding: 6px
+    font-weight: 520; 
+    text-align: center;
+    padding: 5px
 }
 
 .navigation-elements a:hover{
     cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
     font-weight: 580;
 }
 
 .sidebar-elements{
     position: fixed;
     list-style: none;
-    display: flex;   
+    display: flex;  
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    font-size: larger; 
     flex-direction: column;    
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 20px;
     height: 100vh;
     width: var(--sidebarWidth);
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.77);
     backdrop-filter: blur(10px);
-    top: 0px;
     right: 0px;
     margin-top: 0px;
     padding-left: 0px;
@@ -88,14 +98,14 @@ nav {
 
 .sidebar-elements li{
     text-align: center;
-    margin-top: 30px;
     margin-left: 30px; 
+    margin-top: 20px;
+    font-weight: 550; 
 }
 
 .sidebar-elements a {
     color: white;
     text-decoration: none;
-    font-weight: 500; 
     padding: 6px;
     width: 100%;
     transition: filter 300ms ease;
@@ -103,7 +113,8 @@ nav {
 
 .sidebar-elements a:hover{
     cursor: pointer;
-    font-weight: 580;
+    font-weight: 600;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)); 
 }
 
 .showOnMobile{
@@ -111,19 +122,20 @@ nav {
 }
 
 #close_icon{
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact_hover{
     border: 1px solid #ffffff; 
     border-radius: 5px;
     background-color: #ab57ff;
+    transition: filter 200ms ease; 
 }
 
 #contact_hover:hover{
-    border: 2px solid #ffffff; 
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); 
+    font-weight: 530;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)); 
 }
 
 @media(max-width: 820px){
@@ -132,6 +144,7 @@ nav {
     }
     .showOnMobile{
         display: block;
+        margin-right: 10px;
     }
 }
 

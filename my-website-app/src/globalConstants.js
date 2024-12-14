@@ -161,7 +161,7 @@ export const INFO_TEXT_JOB_EXPERIENCE = `Nach dem Abschluss meines Studiums war 
 Dabei habe ich recht schnell mein Interesse an der Softwareentwicklung und Programmierung entdeckt. 
 Aus Interesse entwickelte sich ein Wunsch nach Veränderung. 
 Daher entschied ich mich für einen Wechsel in die Industrie, wo ich nun seit über zwei Jahren erfolgreich als Softwareingenieur tätig bin.
-Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich zum Webentwickler weiterbilde.`;
+Aus Wunsch wurde Leidenschaft, der ich auch in meiner Freizeit nachgehe und mich mit eigenen Softwareprojekten kontinuierlich nach dem Motto "Build. Reflect. Improve." zum Webentwickler weiterbilde.`;
 
 
 export const JOB_EXPERIENCE_CONTENT = [
@@ -171,7 +171,7 @@ export const JOB_EXPERIENCE_CONTENT = [
         url: 'https://www.itk-engineering.de/unternehmen/',
         location: 'Braunschweig',
         timePeriod: 'Seit 01/2023',
-        duties: ['Modellbasierte Unit-Entwicklung mit SCADE oder SIMULINK nach ASIL-B', 
+        duties: ['Modellbasierte Unit-Entwicklung mit SCADE und SIMULINK nach ASIL-B', 
                 'Implementierung und Durchführung von Unit-Tests mit Groovy (SPOCK)',
                 'Systemanalyse und Ableitung von Anforderungen',
                 'Toolentwicklung zur automatisierten Messdatenanalyse mit MATLAB']
